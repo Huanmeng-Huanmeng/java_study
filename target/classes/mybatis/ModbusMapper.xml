@@ -1,0 +1,897 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="com.sany.mdm.dao.ModbusMapper" >
+  <resultMap id="BaseResultMap" type="com.sany.mdm.entity.Modbus" >
+    <id column="modbus_id" property="modbusId" jdbcType="INTEGER" />
+    <result column="point_id" property="pointId" jdbcType="INTEGER" />
+    <result column="register_addr" property="registerAddr" jdbcType="VARCHAR" />
+    <result column="point_description" property="pointDescription" jdbcType="VARCHAR" />
+    <result column="variable_name" property="variableName" jdbcType="VARCHAR" />
+    <result column="register_type" property="registerType" jdbcType="VARCHAR" />
+    <result column="switch_and_fault_code_mark" property="switchAndFaultCodeMark" jdbcType="VARCHAR" />
+    <result column="switch0_escape" property="switch0Escape" jdbcType="VARCHAR" />
+    <result column="switch1_escape" property="switch1Escape" jdbcType="VARCHAR" />
+    <result column="switch_normal_value" property="switchNormalValue" jdbcType="VARCHAR" />
+    <result column="fault_code" property="faultCode" jdbcType="VARCHAR" />
+    <result column="brake_no" property="brakeNo" jdbcType="VARCHAR" />
+    <result column="alarm_level" property="alarmLevel" jdbcType="VARCHAR" />
+    <result column="part_belongs" property="partBelongs" jdbcType="VARCHAR" />
+    <result column="coefficient_analog" property="coefficientAnalog" jdbcType="VARCHAR" />
+    <result column="precision_analog" property="precisionAnalog" jdbcType="VARCHAR" />
+    <result column="data_type_analog" property="dataTypeAnalog" jdbcType="VARCHAR" />
+    <result column="unit_analog" property="unitAnalog" jdbcType="VARCHAR" />
+    <result column="upper_limit_analog" property="upperLimitAnalog" jdbcType="VARCHAR" />
+    <result column="lower_limit_analog" property="lowerLimitAnalog" jdbcType="VARCHAR" />
+    <result column="fault_word_flag" property="faultWordFlag" jdbcType="VARCHAR" />
+    <result column="variable_name_en" property="variableNameEn" jdbcType="VARCHAR" />
+    <result column="variable_plc" property="variablePlc" jdbcType="VARCHAR" />
+    <result column="part_belongs_second" property="partBelongsSecond" jdbcType="VARCHAR" />
+    <result column="variable_group" property="variableGroup" jdbcType="VARCHAR" />
+    <result column="dict_desc" property="dictDesc" jdbcType="VARCHAR" />
+    <result column="scada_dispaly_digit" property="scadaDispalyDigit" jdbcType="VARCHAR" />
+    <result column="part_variable_major_level" property="partVariableMajorLevel" jdbcType="VARCHAR" />
+    <result column="scada_class" property="scadaClass" jdbcType="VARCHAR" />
+    <result column="scada_display_level" property="scadaDisplayLevel" jdbcType="VARCHAR" />
+    <result column="simple_desc_cn" property="simpleDescCn" jdbcType="VARCHAR" />
+    <result column="coefficient_unit" property="coefficientUnit" jdbcType="VARCHAR" />
+    <result column="over_limit_style" property="overLimitStyle" jdbcType="VARCHAR" />
+    <result column="switch0_style" property="switch0Style" jdbcType="VARCHAR" />
+    <result column="switch1_style" property="switch1Style" jdbcType="VARCHAR" />
+    <result column="calculation_type" property="calculationType" jdbcType="VARCHAR" />
+    <result column="resample_type" property="resampleType" jdbcType="VARCHAR" />
+    <result column="iec_xb_web_display" property="iecXbWebDisplay" jdbcType="VARCHAR" />
+    <result column="iec_xb_control_value" property="iecXbControlValue" jdbcType="VARCHAR" />
+    <result column="iec_xb_button_name" property="iecXbButtonName" jdbcType="VARCHAR" />
+    <result column="off_set" property="offSet" jdbcType="VARCHAR" />
+    <result column="channel_uuid" property="channelUuid" jdbcType="VARCHAR" />
+    <result column="ty" property="ty" jdbcType="VARCHAR" />
+    <result column="v2x" property="v2x" jdbcType="VARCHAR" />
+    <result column="v3x" property="v3x" jdbcType="VARCHAR" />
+    <result column="v5x1" property="v5x1" jdbcType="VARCHAR" />
+    <result column="v5x2" property="v5x2" jdbcType="VARCHAR" />
+    <result column="channel_version_version" property="channelVersionVersion" jdbcType="INTEGER" />
+  </resultMap>
+  <sql id="Example_Where_Clause" >
+    <where >
+      <foreach collection="oredCriteria" item="criteria" separator="or" >
+        <if test="criteria.valid" >
+          <trim prefix="(" suffix=")" prefixOverrides="and" >
+            <foreach collection="criteria.criteria" item="criterion" >
+              <choose >
+                <when test="criterion.noValue" >
+                  and ${criterion.condition}
+                </when>
+                <when test="criterion.singleValue" >
+                  and ${criterion.condition} #{criterion.value}
+                </when>
+                <when test="criterion.betweenValue" >
+                  and ${criterion.condition} #{criterion.value} and #{criterion.secondValue}
+                </when>
+                <when test="criterion.listValue" >
+                  and ${criterion.condition}
+                  <foreach collection="criterion.value" item="listItem" open="(" close=")" separator="," >
+                    #{listItem}
+                  </foreach>
+                </when>
+              </choose>
+            </foreach>
+          </trim>
+        </if>
+      </foreach>
+    </where>
+  </sql>
+  <sql id="Update_By_Example_Where_Clause" >
+    <where >
+      <foreach collection="example.oredCriteria" item="criteria" separator="or" >
+        <if test="criteria.valid" >
+          <trim prefix="(" suffix=")" prefixOverrides="and" >
+            <foreach collection="criteria.criteria" item="criterion" >
+              <choose >
+                <when test="criterion.noValue" >
+                  and ${criterion.condition}
+                </when>
+                <when test="criterion.singleValue" >
+                  and ${criterion.condition} #{criterion.value}
+                </when>
+                <when test="criterion.betweenValue" >
+                  and ${criterion.condition} #{criterion.value} and #{criterion.secondValue}
+                </when>
+                <when test="criterion.listValue" >
+                  and ${criterion.condition}
+                  <foreach collection="criterion.value" item="listItem" open="(" close=")" separator="," >
+                    #{listItem}
+                  </foreach>
+                </when>
+              </choose>
+            </foreach>
+          </trim>
+        </if>
+      </foreach>
+    </where>
+  </sql>
+  <sql id="Base_Column_List" >
+    modbus_id, point_id, register_addr, point_description, variable_name, register_type, 
+    switch_and_fault_code_mark, switch0_escape, switch1_escape, switch_normal_value, 
+    fault_code, brake_no, alarm_level, part_belongs, coefficient_analog, precision_analog, 
+    data_type_analog, unit_analog, upper_limit_analog, lower_limit_analog, fault_word_flag, 
+    variable_name_en, variable_plc, part_belongs_second, variable_group, dict_desc, scada_dispaly_digit, 
+    part_variable_major_level, scada_class, scada_display_level, simple_desc_cn, coefficient_unit, 
+    over_limit_style, switch0_style, switch1_style, calculation_type, resample_type, 
+    iec_xb_web_display, iec_xb_control_value, iec_xb_button_name, off_set, channel_uuid, 
+    ty, v2x, v3x, v5x1, v5x2, channel_version_version
+  </sql>
+  <select id="selectByExample" resultMap="BaseResultMap" parameterType="com.sany.mdm.entity.ModbusExample" >
+    select
+    <if test="distinct" >
+      distinct
+    </if>
+    'true' as QUERYID,
+    <include refid="Base_Column_List" />
+    from modbus
+    <if test="_parameter != null" >
+      <include refid="Example_Where_Clause" />
+    </if>
+    <if test="orderByClause != null" >
+      order by ${orderByClause}
+    </if>
+  </select>
+  <select id="selectByPrimaryKey" resultMap="BaseResultMap" parameterType="java.lang.Integer" >
+    select 
+    <include refid="Base_Column_List" />
+    from modbus
+    where modbus_id = #{modbusId,jdbcType=INTEGER}
+  </select>
+  <delete id="deleteByPrimaryKey" parameterType="java.lang.Integer" >
+    delete from modbus
+    where modbus_id = #{modbusId,jdbcType=INTEGER}
+  </delete>
+  <delete id="deleteByExample" parameterType="com.sany.mdm.entity.ModbusExample" >
+    delete from modbus
+    <if test="_parameter != null" >
+      <include refid="Example_Where_Clause" />
+    </if>
+  </delete>
+  <insert id="insert" parameterType="com.sany.mdm.entity.Modbus" >
+    insert into modbus (modbus_id, point_id, register_addr, 
+      point_description, variable_name, register_type, 
+      switch_and_fault_code_mark, switch0_escape, 
+      switch1_escape, switch_normal_value, fault_code, 
+      brake_no, alarm_level, part_belongs, 
+      coefficient_analog, precision_analog, data_type_analog, 
+      unit_analog, upper_limit_analog, lower_limit_analog, 
+      fault_word_flag, variable_name_en, variable_plc, 
+      part_belongs_second, variable_group, dict_desc, 
+      scada_dispaly_digit, part_variable_major_level, 
+      scada_class, scada_display_level, simple_desc_cn, 
+      coefficient_unit, over_limit_style, switch0_style, 
+      switch1_style, calculation_type, resample_type, 
+      iec_xb_web_display, iec_xb_control_value, iec_xb_button_name, 
+      off_set, channel_uuid, ty, 
+      v2x, v3x, v5x1, v5x2, 
+      channel_version_version)
+    values (#{modbusId,jdbcType=INTEGER}, #{pointId,jdbcType=INTEGER}, #{registerAddr,jdbcType=VARCHAR}, 
+      #{pointDescription,jdbcType=VARCHAR}, #{variableName,jdbcType=VARCHAR}, #{registerType,jdbcType=VARCHAR}, 
+      #{switchAndFaultCodeMark,jdbcType=VARCHAR}, #{switch0Escape,jdbcType=VARCHAR}, 
+      #{switch1Escape,jdbcType=VARCHAR}, #{switchNormalValue,jdbcType=VARCHAR}, #{faultCode,jdbcType=VARCHAR}, 
+      #{brakeNo,jdbcType=VARCHAR}, #{alarmLevel,jdbcType=VARCHAR}, #{partBelongs,jdbcType=VARCHAR}, 
+      #{coefficientAnalog,jdbcType=VARCHAR}, #{precisionAnalog,jdbcType=VARCHAR}, #{dataTypeAnalog,jdbcType=VARCHAR}, 
+      #{unitAnalog,jdbcType=VARCHAR}, #{upperLimitAnalog,jdbcType=VARCHAR}, #{lowerLimitAnalog,jdbcType=VARCHAR}, 
+      #{faultWordFlag,jdbcType=VARCHAR}, #{variableNameEn,jdbcType=VARCHAR}, #{variablePlc,jdbcType=VARCHAR}, 
+      #{partBelongsSecond,jdbcType=VARCHAR}, #{variableGroup,jdbcType=VARCHAR}, #{dictDesc,jdbcType=VARCHAR}, 
+      #{scadaDispalyDigit,jdbcType=VARCHAR}, #{partVariableMajorLevel,jdbcType=VARCHAR}, 
+      #{scadaClass,jdbcType=VARCHAR}, #{scadaDisplayLevel,jdbcType=VARCHAR}, #{simpleDescCn,jdbcType=VARCHAR}, 
+      #{coefficientUnit,jdbcType=VARCHAR}, #{overLimitStyle,jdbcType=VARCHAR}, #{switch0Style,jdbcType=VARCHAR}, 
+      #{switch1Style,jdbcType=VARCHAR}, #{calculationType,jdbcType=VARCHAR}, #{resampleType,jdbcType=VARCHAR}, 
+      #{iecXbWebDisplay,jdbcType=VARCHAR}, #{iecXbControlValue,jdbcType=VARCHAR}, #{iecXbButtonName,jdbcType=VARCHAR}, 
+      #{offSet,jdbcType=VARCHAR}, #{channelUuid,jdbcType=VARCHAR}, #{ty,jdbcType=VARCHAR}, 
+      #{v2x,jdbcType=VARCHAR}, #{v3x,jdbcType=VARCHAR}, #{v5x1,jdbcType=VARCHAR}, #{v5x2,jdbcType=VARCHAR}, 
+      #{channelVersionVersion,jdbcType=INTEGER})
+  </insert>
+  <insert id="insertSelective" parameterType="com.sany.mdm.entity.Modbus" >
+    insert into modbus
+    <trim prefix="(" suffix=")" suffixOverrides="," >
+      <if test="modbusId != null" >
+        modbus_id,
+      </if>
+      <if test="pointId != null" >
+        point_id,
+      </if>
+      <if test="registerAddr != null" >
+        register_addr,
+      </if>
+      <if test="pointDescription != null" >
+        point_description,
+      </if>
+      <if test="variableName != null" >
+        variable_name,
+      </if>
+      <if test="registerType != null" >
+        register_type,
+      </if>
+      <if test="switchAndFaultCodeMark != null" >
+        switch_and_fault_code_mark,
+      </if>
+      <if test="switch0Escape != null" >
+        switch0_escape,
+      </if>
+      <if test="switch1Escape != null" >
+        switch1_escape,
+      </if>
+      <if test="switchNormalValue != null" >
+        switch_normal_value,
+      </if>
+      <if test="faultCode != null" >
+        fault_code,
+      </if>
+      <if test="brakeNo != null" >
+        brake_no,
+      </if>
+      <if test="alarmLevel != null" >
+        alarm_level,
+      </if>
+      <if test="partBelongs != null" >
+        part_belongs,
+      </if>
+      <if test="coefficientAnalog != null" >
+        coefficient_analog,
+      </if>
+      <if test="precisionAnalog != null" >
+        precision_analog,
+      </if>
+      <if test="dataTypeAnalog != null" >
+        data_type_analog,
+      </if>
+      <if test="unitAnalog != null" >
+        unit_analog,
+      </if>
+      <if test="upperLimitAnalog != null" >
+        upper_limit_analog,
+      </if>
+      <if test="lowerLimitAnalog != null" >
+        lower_limit_analog,
+      </if>
+      <if test="faultWordFlag != null" >
+        fault_word_flag,
+      </if>
+      <if test="variableNameEn != null" >
+        variable_name_en,
+      </if>
+      <if test="variablePlc != null" >
+        variable_plc,
+      </if>
+      <if test="partBelongsSecond != null" >
+        part_belongs_second,
+      </if>
+      <if test="variableGroup != null" >
+        variable_group,
+      </if>
+      <if test="dictDesc != null" >
+        dict_desc,
+      </if>
+      <if test="scadaDispalyDigit != null" >
+        scada_dispaly_digit,
+      </if>
+      <if test="partVariableMajorLevel != null" >
+        part_variable_major_level,
+      </if>
+      <if test="scadaClass != null" >
+        scada_class,
+      </if>
+      <if test="scadaDisplayLevel != null" >
+        scada_display_level,
+      </if>
+      <if test="simpleDescCn != null" >
+        simple_desc_cn,
+      </if>
+      <if test="coefficientUnit != null" >
+        coefficient_unit,
+      </if>
+      <if test="overLimitStyle != null" >
+        over_limit_style,
+      </if>
+      <if test="switch0Style != null" >
+        switch0_style,
+      </if>
+      <if test="switch1Style != null" >
+        switch1_style,
+      </if>
+      <if test="calculationType != null" >
+        calculation_type,
+      </if>
+      <if test="resampleType != null" >
+        resample_type,
+      </if>
+      <if test="iecXbWebDisplay != null" >
+        iec_xb_web_display,
+      </if>
+      <if test="iecXbControlValue != null" >
+        iec_xb_control_value,
+      </if>
+      <if test="iecXbButtonName != null" >
+        iec_xb_button_name,
+      </if>
+      <if test="offSet != null" >
+        off_set,
+      </if>
+      <if test="channelUuid != null" >
+        channel_uuid,
+      </if>
+      <if test="ty != null" >
+        ty,
+      </if>
+      <if test="v2x != null" >
+        v2x,
+      </if>
+      <if test="v3x != null" >
+        v3x,
+      </if>
+      <if test="v5x1 != null" >
+        v5x1,
+      </if>
+      <if test="v5x2 != null" >
+        v5x2,
+      </if>
+      <if test="channelVersionVersion != null" >
+        channel_version_version,
+      </if>
+    </trim>
+    <trim prefix="values (" suffix=")" suffixOverrides="," >
+      <if test="modbusId != null" >
+        #{modbusId,jdbcType=INTEGER},
+      </if>
+      <if test="pointId != null" >
+        #{pointId,jdbcType=INTEGER},
+      </if>
+      <if test="registerAddr != null" >
+        #{registerAddr,jdbcType=VARCHAR},
+      </if>
+      <if test="pointDescription != null" >
+        #{pointDescription,jdbcType=VARCHAR},
+      </if>
+      <if test="variableName != null" >
+        #{variableName,jdbcType=VARCHAR},
+      </if>
+      <if test="registerType != null" >
+        #{registerType,jdbcType=VARCHAR},
+      </if>
+      <if test="switchAndFaultCodeMark != null" >
+        #{switchAndFaultCodeMark,jdbcType=VARCHAR},
+      </if>
+      <if test="switch0Escape != null" >
+        #{switch0Escape,jdbcType=VARCHAR},
+      </if>
+      <if test="switch1Escape != null" >
+        #{switch1Escape,jdbcType=VARCHAR},
+      </if>
+      <if test="switchNormalValue != null" >
+        #{switchNormalValue,jdbcType=VARCHAR},
+      </if>
+      <if test="faultCode != null" >
+        #{faultCode,jdbcType=VARCHAR},
+      </if>
+      <if test="brakeNo != null" >
+        #{brakeNo,jdbcType=VARCHAR},
+      </if>
+      <if test="alarmLevel != null" >
+        #{alarmLevel,jdbcType=VARCHAR},
+      </if>
+      <if test="partBelongs != null" >
+        #{partBelongs,jdbcType=VARCHAR},
+      </if>
+      <if test="coefficientAnalog != null" >
+        #{coefficientAnalog,jdbcType=VARCHAR},
+      </if>
+      <if test="precisionAnalog != null" >
+        #{precisionAnalog,jdbcType=VARCHAR},
+      </if>
+      <if test="dataTypeAnalog != null" >
+        #{dataTypeAnalog,jdbcType=VARCHAR},
+      </if>
+      <if test="unitAnalog != null" >
+        #{unitAnalog,jdbcType=VARCHAR},
+      </if>
+      <if test="upperLimitAnalog != null" >
+        #{upperLimitAnalog,jdbcType=VARCHAR},
+      </if>
+      <if test="lowerLimitAnalog != null" >
+        #{lowerLimitAnalog,jdbcType=VARCHAR},
+      </if>
+      <if test="faultWordFlag != null" >
+        #{faultWordFlag,jdbcType=VARCHAR},
+      </if>
+      <if test="variableNameEn != null" >
+        #{variableNameEn,jdbcType=VARCHAR},
+      </if>
+      <if test="variablePlc != null" >
+        #{variablePlc,jdbcType=VARCHAR},
+      </if>
+      <if test="partBelongsSecond != null" >
+        #{partBelongsSecond,jdbcType=VARCHAR},
+      </if>
+      <if test="variableGroup != null" >
+        #{variableGroup,jdbcType=VARCHAR},
+      </if>
+      <if test="dictDesc != null" >
+        #{dictDesc,jdbcType=VARCHAR},
+      </if>
+      <if test="scadaDispalyDigit != null" >
+        #{scadaDispalyDigit,jdbcType=VARCHAR},
+      </if>
+      <if test="partVariableMajorLevel != null" >
+        #{partVariableMajorLevel,jdbcType=VARCHAR},
+      </if>
+      <if test="scadaClass != null" >
+        #{scadaClass,jdbcType=VARCHAR},
+      </if>
+      <if test="scadaDisplayLevel != null" >
+        #{scadaDisplayLevel,jdbcType=VARCHAR},
+      </if>
+      <if test="simpleDescCn != null" >
+        #{simpleDescCn,jdbcType=VARCHAR},
+      </if>
+      <if test="coefficientUnit != null" >
+        #{coefficientUnit,jdbcType=VARCHAR},
+      </if>
+      <if test="overLimitStyle != null" >
+        #{overLimitStyle,jdbcType=VARCHAR},
+      </if>
+      <if test="switch0Style != null" >
+        #{switch0Style,jdbcType=VARCHAR},
+      </if>
+      <if test="switch1Style != null" >
+        #{switch1Style,jdbcType=VARCHAR},
+      </if>
+      <if test="calculationType != null" >
+        #{calculationType,jdbcType=VARCHAR},
+      </if>
+      <if test="resampleType != null" >
+        #{resampleType,jdbcType=VARCHAR},
+      </if>
+      <if test="iecXbWebDisplay != null" >
+        #{iecXbWebDisplay,jdbcType=VARCHAR},
+      </if>
+      <if test="iecXbControlValue != null" >
+        #{iecXbControlValue,jdbcType=VARCHAR},
+      </if>
+      <if test="iecXbButtonName != null" >
+        #{iecXbButtonName,jdbcType=VARCHAR},
+      </if>
+      <if test="offSet != null" >
+        #{offSet,jdbcType=VARCHAR},
+      </if>
+      <if test="channelUuid != null" >
+        #{channelUuid,jdbcType=VARCHAR},
+      </if>
+      <if test="ty != null" >
+        #{ty,jdbcType=VARCHAR},
+      </if>
+      <if test="v2x != null" >
+        #{v2x,jdbcType=VARCHAR},
+      </if>
+      <if test="v3x != null" >
+        #{v3x,jdbcType=VARCHAR},
+      </if>
+      <if test="v5x1 != null" >
+        #{v5x1,jdbcType=VARCHAR},
+      </if>
+      <if test="v5x2 != null" >
+        #{v5x2,jdbcType=VARCHAR},
+      </if>
+      <if test="channelVersionVersion != null" >
+        #{channelVersionVersion,jdbcType=INTEGER},
+      </if>
+    </trim>
+  </insert>
+  <select id="countByExample" parameterType="com.sany.mdm.entity.ModbusExample" resultType="java.lang.Integer" >
+    select count(*) from modbus
+    <if test="_parameter != null" >
+      <include refid="Example_Where_Clause" />
+    </if>
+  </select>
+  <update id="updateByExampleSelective" parameterType="map" >
+    update modbus
+    <set >
+      <if test="record.modbusId != null" >
+        modbus_id = #{record.modbusId,jdbcType=INTEGER},
+      </if>
+      <if test="record.pointId != null" >
+        point_id = #{record.pointId,jdbcType=INTEGER},
+      </if>
+      <if test="record.registerAddr != null" >
+        register_addr = #{record.registerAddr,jdbcType=VARCHAR},
+      </if>
+      <if test="record.pointDescription != null" >
+        point_description = #{record.pointDescription,jdbcType=VARCHAR},
+      </if>
+      <if test="record.variableName != null" >
+        variable_name = #{record.variableName,jdbcType=VARCHAR},
+      </if>
+      <if test="record.registerType != null" >
+        register_type = #{record.registerType,jdbcType=VARCHAR},
+      </if>
+      <if test="record.switchAndFaultCodeMark != null" >
+        switch_and_fault_code_mark = #{record.switchAndFaultCodeMark,jdbcType=VARCHAR},
+      </if>
+      <if test="record.switch0Escape != null" >
+        switch0_escape = #{record.switch0Escape,jdbcType=VARCHAR},
+      </if>
+      <if test="record.switch1Escape != null" >
+        switch1_escape = #{record.switch1Escape,jdbcType=VARCHAR},
+      </if>
+      <if test="record.switchNormalValue != null" >
+        switch_normal_value = #{record.switchNormalValue,jdbcType=VARCHAR},
+      </if>
+      <if test="record.faultCode != null" >
+        fault_code = #{record.faultCode,jdbcType=VARCHAR},
+      </if>
+      <if test="record.brakeNo != null" >
+        brake_no = #{record.brakeNo,jdbcType=VARCHAR},
+      </if>
+      <if test="record.alarmLevel != null" >
+        alarm_level = #{record.alarmLevel,jdbcType=VARCHAR},
+      </if>
+      <if test="record.partBelongs != null" >
+        part_belongs = #{record.partBelongs,jdbcType=VARCHAR},
+      </if>
+      <if test="record.coefficientAnalog != null" >
+        coefficient_analog = #{record.coefficientAnalog,jdbcType=VARCHAR},
+      </if>
+      <if test="record.precisionAnalog != null" >
+        precision_analog = #{record.precisionAnalog,jdbcType=VARCHAR},
+      </if>
+      <if test="record.dataTypeAnalog != null" >
+        data_type_analog = #{record.dataTypeAnalog,jdbcType=VARCHAR},
+      </if>
+      <if test="record.unitAnalog != null" >
+        unit_analog = #{record.unitAnalog,jdbcType=VARCHAR},
+      </if>
+      <if test="record.upperLimitAnalog != null" >
+        upper_limit_analog = #{record.upperLimitAnalog,jdbcType=VARCHAR},
+      </if>
+      <if test="record.lowerLimitAnalog != null" >
+        lower_limit_analog = #{record.lowerLimitAnalog,jdbcType=VARCHAR},
+      </if>
+      <if test="record.faultWordFlag != null" >
+        fault_word_flag = #{record.faultWordFlag,jdbcType=VARCHAR},
+      </if>
+      <if test="record.variableNameEn != null" >
+        variable_name_en = #{record.variableNameEn,jdbcType=VARCHAR},
+      </if>
+      <if test="record.variablePlc != null" >
+        variable_plc = #{record.variablePlc,jdbcType=VARCHAR},
+      </if>
+      <if test="record.partBelongsSecond != null" >
+        part_belongs_second = #{record.partBelongsSecond,jdbcType=VARCHAR},
+      </if>
+      <if test="record.variableGroup != null" >
+        variable_group = #{record.variableGroup,jdbcType=VARCHAR},
+      </if>
+      <if test="record.dictDesc != null" >
+        dict_desc = #{record.dictDesc,jdbcType=VARCHAR},
+      </if>
+      <if test="record.scadaDispalyDigit != null" >
+        scada_dispaly_digit = #{record.scadaDispalyDigit,jdbcType=VARCHAR},
+      </if>
+      <if test="record.partVariableMajorLevel != null" >
+        part_variable_major_level = #{record.partVariableMajorLevel,jdbcType=VARCHAR},
+      </if>
+      <if test="record.scadaClass != null" >
+        scada_class = #{record.scadaClass,jdbcType=VARCHAR},
+      </if>
+      <if test="record.scadaDisplayLevel != null" >
+        scada_display_level = #{record.scadaDisplayLevel,jdbcType=VARCHAR},
+      </if>
+      <if test="record.simpleDescCn != null" >
+        simple_desc_cn = #{record.simpleDescCn,jdbcType=VARCHAR},
+      </if>
+      <if test="record.coefficientUnit != null" >
+        coefficient_unit = #{record.coefficientUnit,jdbcType=VARCHAR},
+      </if>
+      <if test="record.overLimitStyle != null" >
+        over_limit_style = #{record.overLimitStyle,jdbcType=VARCHAR},
+      </if>
+      <if test="record.switch0Style != null" >
+        switch0_style = #{record.switch0Style,jdbcType=VARCHAR},
+      </if>
+      <if test="record.switch1Style != null" >
+        switch1_style = #{record.switch1Style,jdbcType=VARCHAR},
+      </if>
+      <if test="record.calculationType != null" >
+        calculation_type = #{record.calculationType,jdbcType=VARCHAR},
+      </if>
+      <if test="record.resampleType != null" >
+        resample_type = #{record.resampleType,jdbcType=VARCHAR},
+      </if>
+      <if test="record.iecXbWebDisplay != null" >
+        iec_xb_web_display = #{record.iecXbWebDisplay,jdbcType=VARCHAR},
+      </if>
+      <if test="record.iecXbControlValue != null" >
+        iec_xb_control_value = #{record.iecXbControlValue,jdbcType=VARCHAR},
+      </if>
+      <if test="record.iecXbButtonName != null" >
+        iec_xb_button_name = #{record.iecXbButtonName,jdbcType=VARCHAR},
+      </if>
+      <if test="record.offSet != null" >
+        off_set = #{record.offSet,jdbcType=VARCHAR},
+      </if>
+      <if test="record.channelUuid != null" >
+        channel_uuid = #{record.channelUuid,jdbcType=VARCHAR},
+      </if>
+      <if test="record.ty != null" >
+        ty = #{record.ty,jdbcType=VARCHAR},
+      </if>
+      <if test="record.v2x != null" >
+        v2x = #{record.v2x,jdbcType=VARCHAR},
+      </if>
+      <if test="record.v3x != null" >
+        v3x = #{record.v3x,jdbcType=VARCHAR},
+      </if>
+      <if test="record.v5x1 != null" >
+        v5x1 = #{record.v5x1,jdbcType=VARCHAR},
+      </if>
+      <if test="record.v5x2 != null" >
+        v5x2 = #{record.v5x2,jdbcType=VARCHAR},
+      </if>
+      <if test="record.channelVersionVersion != null" >
+        channel_version_version = #{record.channelVersionVersion,jdbcType=INTEGER},
+      </if>
+    </set>
+    <if test="_parameter != null" >
+      <include refid="Update_By_Example_Where_Clause" />
+    </if>
+  </update>
+  <update id="updateByExample" parameterType="map" >
+    update modbus
+    set modbus_id = #{record.modbusId,jdbcType=INTEGER},
+      point_id = #{record.pointId,jdbcType=INTEGER},
+      register_addr = #{record.registerAddr,jdbcType=VARCHAR},
+      point_description = #{record.pointDescription,jdbcType=VARCHAR},
+      variable_name = #{record.variableName,jdbcType=VARCHAR},
+      register_type = #{record.registerType,jdbcType=VARCHAR},
+      switch_and_fault_code_mark = #{record.switchAndFaultCodeMark,jdbcType=VARCHAR},
+      switch0_escape = #{record.switch0Escape,jdbcType=VARCHAR},
+      switch1_escape = #{record.switch1Escape,jdbcType=VARCHAR},
+      switch_normal_value = #{record.switchNormalValue,jdbcType=VARCHAR},
+      fault_code = #{record.faultCode,jdbcType=VARCHAR},
+      brake_no = #{record.brakeNo,jdbcType=VARCHAR},
+      alarm_level = #{record.alarmLevel,jdbcType=VARCHAR},
+      part_belongs = #{record.partBelongs,jdbcType=VARCHAR},
+      coefficient_analog = #{record.coefficientAnalog,jdbcType=VARCHAR},
+      precision_analog = #{record.precisionAnalog,jdbcType=VARCHAR},
+      data_type_analog = #{record.dataTypeAnalog,jdbcType=VARCHAR},
+      unit_analog = #{record.unitAnalog,jdbcType=VARCHAR},
+      upper_limit_analog = #{record.upperLimitAnalog,jdbcType=VARCHAR},
+      lower_limit_analog = #{record.lowerLimitAnalog,jdbcType=VARCHAR},
+      fault_word_flag = #{record.faultWordFlag,jdbcType=VARCHAR},
+      variable_name_en = #{record.variableNameEn,jdbcType=VARCHAR},
+      variable_plc = #{record.variablePlc,jdbcType=VARCHAR},
+      part_belongs_second = #{record.partBelongsSecond,jdbcType=VARCHAR},
+      variable_group = #{record.variableGroup,jdbcType=VARCHAR},
+      dict_desc = #{record.dictDesc,jdbcType=VARCHAR},
+      scada_dispaly_digit = #{record.scadaDispalyDigit,jdbcType=VARCHAR},
+      part_variable_major_level = #{record.partVariableMajorLevel,jdbcType=VARCHAR},
+      scada_class = #{record.scadaClass,jdbcType=VARCHAR},
+      scada_display_level = #{record.scadaDisplayLevel,jdbcType=VARCHAR},
+      simple_desc_cn = #{record.simpleDescCn,jdbcType=VARCHAR},
+      coefficient_unit = #{record.coefficientUnit,jdbcType=VARCHAR},
+      over_limit_style = #{record.overLimitStyle,jdbcType=VARCHAR},
+      switch0_style = #{record.switch0Style,jdbcType=VARCHAR},
+      switch1_style = #{record.switch1Style,jdbcType=VARCHAR},
+      calculation_type = #{record.calculationType,jdbcType=VARCHAR},
+      resample_type = #{record.resampleType,jdbcType=VARCHAR},
+      iec_xb_web_display = #{record.iecXbWebDisplay,jdbcType=VARCHAR},
+      iec_xb_control_value = #{record.iecXbControlValue,jdbcType=VARCHAR},
+      iec_xb_button_name = #{record.iecXbButtonName,jdbcType=VARCHAR},
+      off_set = #{record.offSet,jdbcType=VARCHAR},
+      channel_uuid = #{record.channelUuid,jdbcType=VARCHAR},
+      ty = #{record.ty,jdbcType=VARCHAR},
+      v2x = #{record.v2x,jdbcType=VARCHAR},
+      v3x = #{record.v3x,jdbcType=VARCHAR},
+      v5x1 = #{record.v5x1,jdbcType=VARCHAR},
+      v5x2 = #{record.v5x2,jdbcType=VARCHAR},
+      channel_version_version = #{record.channelVersionVersion,jdbcType=INTEGER}
+    <if test="_parameter != null" >
+      <include refid="Update_By_Example_Where_Clause" />
+    </if>
+  </update>
+
+
+  <update id="updateByPrimaryKeySelective" parameterType="com.sany.mdm.entity.Modbus" >
+    update modbus
+    <set >
+      <if test="pointId != null" >
+        point_id = #{pointId,jdbcType=INTEGER},
+      </if>
+      <if test="registerAddr != null" >
+        register_addr = #{registerAddr,jdbcType=VARCHAR},
+      </if>
+      <if test="pointDescription != null" >
+        point_description = #{pointDescription,jdbcType=VARCHAR},
+      </if>
+      <if test="variableName != null" >
+        variable_name = #{variableName,jdbcType=VARCHAR},
+      </if>
+      <if test="registerType != null" >
+        register_type = #{registerType,jdbcType=VARCHAR},
+      </if>
+      <if test="switchAndFaultCodeMark != null" >
+        switch_and_fault_code_mark = #{switchAndFaultCodeMark,jdbcType=VARCHAR},
+      </if>
+      <if test="switch0Escape != null" >
+        switch0_escape = #{switch0Escape,jdbcType=VARCHAR},
+      </if>
+      <if test="switch1Escape != null" >
+        switch1_escape = #{switch1Escape,jdbcType=VARCHAR},
+      </if>
+      <if test="switchNormalValue != null" >
+        switch_normal_value = #{switchNormalValue,jdbcType=VARCHAR},
+      </if>
+      <if test="faultCode != null" >
+        fault_code = #{faultCode,jdbcType=VARCHAR},
+      </if>
+      <if test="brakeNo != null" >
+        brake_no = #{brakeNo,jdbcType=VARCHAR},
+      </if>
+      <if test="alarmLevel != null" >
+        alarm_level = #{alarmLevel,jdbcType=VARCHAR},
+      </if>
+      <if test="partBelongs != null" >
+        part_belongs = #{partBelongs,jdbcType=VARCHAR},
+      </if>
+      <if test="coefficientAnalog != null" >
+        coefficient_analog = #{coefficientAnalog,jdbcType=VARCHAR},
+      </if>
+      <if test="precisionAnalog != null" >
+        precision_analog = #{precisionAnalog,jdbcType=VARCHAR},
+      </if>
+      <if test="dataTypeAnalog != null" >
+        data_type_analog = #{dataTypeAnalog,jdbcType=VARCHAR},
+      </if>
+      <if test="unitAnalog != null" >
+        unit_analog = #{unitAnalog,jdbcType=VARCHAR},
+      </if>
+      <if test="upperLimitAnalog != null" >
+        upper_limit_analog = #{upperLimitAnalog,jdbcType=VARCHAR},
+      </if>
+      <if test="lowerLimitAnalog != null" >
+        lower_limit_analog = #{lowerLimitAnalog,jdbcType=VARCHAR},
+      </if>
+      <if test="faultWordFlag != null" >
+        fault_word_flag = #{faultWordFlag,jdbcType=VARCHAR},
+      </if>
+      <if test="variableNameEn != null" >
+        variable_name_en = #{variableNameEn,jdbcType=VARCHAR},
+      </if>
+      <if test="variablePlc != null" >
+        variable_plc = #{variablePlc,jdbcType=VARCHAR},
+      </if>
+      <if test="partBelongsSecond != null" >
+        part_belongs_second = #{partBelongsSecond,jdbcType=VARCHAR},
+      </if>
+      <if test="variableGroup != null" >
+        variable_group = #{variableGroup,jdbcType=VARCHAR},
+      </if>
+      <if test="dictDesc != null" >
+        dict_desc = #{dictDesc,jdbcType=VARCHAR},
+      </if>
+      <if test="scadaDispalyDigit != null" >
+        scada_dispaly_digit = #{scadaDispalyDigit,jdbcType=VARCHAR},
+      </if>
+      <if test="partVariableMajorLevel != null" >
+        part_variable_major_level = #{partVariableMajorLevel,jdbcType=VARCHAR},
+      </if>
+      <if test="scadaClass != null" >
+        scada_class = #{scadaClass,jdbcType=VARCHAR},
+      </if>
+      <if test="scadaDisplayLevel != null" >
+        scada_display_level = #{scadaDisplayLevel,jdbcType=VARCHAR},
+      </if>
+      <if test="simpleDescCn != null" >
+        simple_desc_cn = #{simpleDescCn,jdbcType=VARCHAR},
+      </if>
+      <if test="coefficientUnit != null" >
+        coefficient_unit = #{coefficientUnit,jdbcType=VARCHAR},
+      </if>
+      <if test="overLimitStyle != null" >
+        over_limit_style = #{overLimitStyle,jdbcType=VARCHAR},
+      </if>
+      <if test="switch0Style != null" >
+        switch0_style = #{switch0Style,jdbcType=VARCHAR},
+      </if>
+      <if test="switch1Style != null" >
+        switch1_style = #{switch1Style,jdbcType=VARCHAR},
+      </if>
+      <if test="calculationType != null" >
+        calculation_type = #{calculationType,jdbcType=VARCHAR},
+      </if>
+      <if test="resampleType != null" >
+        resample_type = #{resampleType,jdbcType=VARCHAR},
+      </if>
+      <if test="iecXbWebDisplay != null" >
+        iec_xb_web_display = #{iecXbWebDisplay,jdbcType=VARCHAR},
+      </if>
+      <if test="iecXbControlValue != null" >
+        iec_xb_control_value = #{iecXbControlValue,jdbcType=VARCHAR},
+      </if>
+      <if test="iecXbButtonName != null" >
+        iec_xb_button_name = #{iecXbButtonName,jdbcType=VARCHAR},
+      </if>
+      <if test="offSet != null" >
+        off_set = #{offSet,jdbcType=VARCHAR},
+      </if>
+      <if test="channelUuid != null" >
+        channel_uuid = #{channelUuid,jdbcType=VARCHAR},
+      </if>
+      <if test="ty != null" >
+        ty = #{ty,jdbcType=VARCHAR},
+      </if>
+      <if test="v2x != null" >
+        v2x = #{v2x,jdbcType=VARCHAR},
+      </if>
+      <if test="v3x != null" >
+        v3x = #{v3x,jdbcType=VARCHAR},
+      </if>
+      <if test="v5x1 != null" >
+        v5x1 = #{v5x1,jdbcType=VARCHAR},
+      </if>
+      <if test="v5x2 != null" >
+        v5x2 = #{v5x2,jdbcType=VARCHAR},
+      </if>
+      <if test="channelVersionVersion != null" >
+        channel_version_version = #{channelVersionVersion,jdbcType=INTEGER},
+      </if>
+    </set>
+    where modbus_id = #{modbusId,jdbcType=INTEGER}
+  </update>
+  <update id="updateByPrimaryKey" parameterType="com.sany.mdm.entity.Modbus" >
+    update modbus
+    set point_id = #{pointId,jdbcType=INTEGER},
+      register_addr = #{registerAddr,jdbcType=VARCHAR},
+      point_description = #{pointDescription,jdbcType=VARCHAR},
+      variable_name = #{variableName,jdbcType=VARCHAR},
+      register_type = #{registerType,jdbcType=VARCHAR},
+      switch_and_fault_code_mark = #{switchAndFaultCodeMark,jdbcType=VARCHAR},
+      switch0_escape = #{switch0Escape,jdbcType=VARCHAR},
+      switch1_escape = #{switch1Escape,jdbcType=VARCHAR},
+      switch_normal_value = #{switchNormalValue,jdbcType=VARCHAR},
+      fault_code = #{faultCode,jdbcType=VARCHAR},
+      brake_no = #{brakeNo,jdbcType=VARCHAR},
+      alarm_level = #{alarmLevel,jdbcType=VARCHAR},
+      part_belongs = #{partBelongs,jdbcType=VARCHAR},
+      coefficient_analog = #{coefficientAnalog,jdbcType=VARCHAR},
+      precision_analog = #{precisionAnalog,jdbcType=VARCHAR},
+      data_type_analog = #{dataTypeAnalog,jdbcType=VARCHAR},
+      unit_analog = #{unitAnalog,jdbcType=VARCHAR},
+      upper_limit_analog = #{upperLimitAnalog,jdbcType=VARCHAR},
+      lower_limit_analog = #{lowerLimitAnalog,jdbcType=VARCHAR},
+      fault_word_flag = #{faultWordFlag,jdbcType=VARCHAR},
+      variable_name_en = #{variableNameEn,jdbcType=VARCHAR},
+      variable_plc = #{variablePlc,jdbcType=VARCHAR},
+      part_belongs_second = #{partBelongsSecond,jdbcType=VARCHAR},
+      variable_group = #{variableGroup,jdbcType=VARCHAR},
+      dict_desc = #{dictDesc,jdbcType=VARCHAR},
+      scada_dispaly_digit = #{scadaDispalyDigit,jdbcType=VARCHAR},
+      part_variable_major_level = #{partVariableMajorLevel,jdbcType=VARCHAR},
+      scada_class = #{scadaClass,jdbcType=VARCHAR},
+      scada_display_level = #{scadaDisplayLevel,jdbcType=VARCHAR},
+      simple_desc_cn = #{simpleDescCn,jdbcType=VARCHAR},
+      coefficient_unit = #{coefficientUnit,jdbcType=VARCHAR},
+      over_limit_style = #{overLimitStyle,jdbcType=VARCHAR},
+      switch0_style = #{switch0Style,jdbcType=VARCHAR},
+      switch1_style = #{switch1Style,jdbcType=VARCHAR},
+      calculation_type = #{calculationType,jdbcType=VARCHAR},
+      resample_type = #{resampleType,jdbcType=VARCHAR},
+      iec_xb_web_display = #{iecXbWebDisplay,jdbcType=VARCHAR},
+      iec_xb_control_value = #{iecXbControlValue,jdbcType=VARCHAR},
+      iec_xb_button_name = #{iecXbButtonName,jdbcType=VARCHAR},
+      off_set = #{offSet,jdbcType=VARCHAR},
+      channel_uuid = #{channelUuid,jdbcType=VARCHAR},
+      ty = #{ty,jdbcType=VARCHAR},
+      v2x = #{v2x,jdbcType=VARCHAR},
+      v3x = #{v3x,jdbcType=VARCHAR},
+      v5x1 = #{v5x1,jdbcType=VARCHAR},
+      v5x2 = #{v5x2,jdbcType=VARCHAR},
+      channel_version_version = #{channelVersionVersion,jdbcType=INTEGER}
+    where modbus_id = #{modbusId,jdbcType=INTEGER}
+  </update>
+</mapper>

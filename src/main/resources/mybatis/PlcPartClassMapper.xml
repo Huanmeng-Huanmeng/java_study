@@ -1,0 +1,202 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="com.sany.mdm.dao.PlcPartClassMapper" >
+  <resultMap id="BaseResultMap" type="com.sany.mdm.entity.PlcPartClass" >
+    <id column="id" property="id" jdbcType="INTEGER" />
+    <result column="plc_part_class_uuid" property="plcPartClassUuid" jdbcType="VARCHAR" />
+    <result column="point_uuid" property="pointUuid" jdbcType="VARCHAR" />
+    <result column="part_display_order" property="partDisplayOrder" jdbcType="INTEGER" />
+    <result column="scada_part_class" property="scadaPartClass" jdbcType="VARCHAR" />
+    <result column="master_control_part_class" property="masterControlPartClass" jdbcType="VARCHAR" />
+    <result column="full_english_name" property="fullEnglishName" jdbcType="VARCHAR" />
+    <result column="english_abbreviations" property="englishAbbreviations" jdbcType="VARCHAR" />
+    <result column="remark" property="remark" jdbcType="VARCHAR" />
+    <result column="create_by" property="createBy" jdbcType="VARCHAR" />
+    <result column="create_time" property="createTime" jdbcType="TIMESTAMP" />
+    <result column="update_by" property="updateBy" jdbcType="VARCHAR" />
+    <result column="update_time" property="updateTime" jdbcType="TIMESTAMP" />
+    <result column="is_delete" property="isDelete" jdbcType="INTEGER" />
+  </resultMap>
+  <sql id="Base_Column_List" >
+    id, plc_part_class_uuid, point_uuid, part_display_order, scada_part_class, master_control_part_class, 
+    full_english_name, english_abbreviations, remark, create_by, create_time, update_by, 
+    update_time, is_delete
+  </sql>
+  <select id="selectByPrimaryKey" resultMap="BaseResultMap" parameterType="java.lang.Integer" >
+    select 
+    <include refid="Base_Column_List" />
+    from plc_part_class
+    where id = #{id,jdbcType=INTEGER}
+  </select>
+  <delete id="deleteByPrimaryKey" parameterType="java.lang.Integer" >
+    delete from plc_part_class
+    where id = #{id,jdbcType=INTEGER}
+  </delete>
+  <insert id="insert" parameterType="com.sany.mdm.entity.PlcPartClass" >
+    insert into plc_part_class (id, plc_part_class_uuid, point_uuid, 
+      part_display_order, scada_part_class, master_control_part_class, 
+      full_english_name, english_abbreviations, 
+      remark, create_by, create_time, 
+      update_by, update_time, is_delete
+      )
+    values (#{id,jdbcType=INTEGER}, #{plcPartClassUuid,jdbcType=VARCHAR}, #{pointUuid,jdbcType=VARCHAR}, 
+      #{partDisplayOrder,jdbcType=INTEGER}, #{scadaPartClass,jdbcType=VARCHAR}, #{masterControlPartClass,jdbcType=VARCHAR}, 
+      #{fullEnglishName,jdbcType=VARCHAR}, #{englishAbbreviations,jdbcType=VARCHAR}, 
+      #{remark,jdbcType=VARCHAR}, #{createBy,jdbcType=VARCHAR}, #{createTime,jdbcType=TIMESTAMP}, 
+      #{updateBy,jdbcType=VARCHAR}, #{updateTime,jdbcType=TIMESTAMP}, #{isDelete,jdbcType=INTEGER}
+      )
+  </insert>
+  <insert id="insertSelective" parameterType="com.sany.mdm.entity.PlcPartClass" >
+    insert into plc_part_class
+    <trim prefix="(" suffix=")" suffixOverrides="," >
+      <if test="id != null" >
+        id,
+      </if>
+      <if test="plcPartClassUuid != null" >
+        plc_part_class_uuid,
+      </if>
+      <if test="pointUuid != null" >
+        point_uuid,
+      </if>
+      <if test="partDisplayOrder != null" >
+        part_display_order,
+      </if>
+      <if test="scadaPartClass != null" >
+        scada_part_class,
+      </if>
+      <if test="masterControlPartClass != null" >
+        master_control_part_class,
+      </if>
+      <if test="fullEnglishName != null" >
+        full_english_name,
+      </if>
+      <if test="englishAbbreviations != null" >
+        english_abbreviations,
+      </if>
+      <if test="remark != null" >
+        remark,
+      </if>
+      <if test="createBy != null" >
+        create_by,
+      </if>
+      <if test="createTime != null" >
+        create_time,
+      </if>
+      <if test="updateBy != null" >
+        update_by,
+      </if>
+      <if test="updateTime != null" >
+        update_time,
+      </if>
+      <if test="isDelete != null" >
+        is_delete,
+      </if>
+    </trim>
+    <trim prefix="values (" suffix=")" suffixOverrides="," >
+      <if test="id != null" >
+        #{id,jdbcType=INTEGER},
+      </if>
+      <if test="plcPartClassUuid != null" >
+        #{plcPartClassUuid,jdbcType=VARCHAR},
+      </if>
+      <if test="pointUuid != null" >
+        #{pointUuid,jdbcType=VARCHAR},
+      </if>
+      <if test="partDisplayOrder != null" >
+        #{partDisplayOrder,jdbcType=INTEGER},
+      </if>
+      <if test="scadaPartClass != null" >
+        #{scadaPartClass,jdbcType=VARCHAR},
+      </if>
+      <if test="masterControlPartClass != null" >
+        #{masterControlPartClass,jdbcType=VARCHAR},
+      </if>
+      <if test="fullEnglishName != null" >
+        #{fullEnglishName,jdbcType=VARCHAR},
+      </if>
+      <if test="englishAbbreviations != null" >
+        #{englishAbbreviations,jdbcType=VARCHAR},
+      </if>
+      <if test="remark != null" >
+        #{remark,jdbcType=VARCHAR},
+      </if>
+      <if test="createBy != null" >
+        #{createBy,jdbcType=VARCHAR},
+      </if>
+      <if test="createTime != null" >
+        #{createTime,jdbcType=TIMESTAMP},
+      </if>
+      <if test="updateBy != null" >
+        #{updateBy,jdbcType=VARCHAR},
+      </if>
+      <if test="updateTime != null" >
+        #{updateTime,jdbcType=TIMESTAMP},
+      </if>
+      <if test="isDelete != null" >
+        #{isDelete,jdbcType=INTEGER},
+      </if>
+    </trim>
+  </insert>
+  <update id="updateByPrimaryKeySelective" parameterType="com.sany.mdm.entity.PlcPartClass" >
+    update plc_part_class
+    <set >
+      <if test="plcPartClassUuid != null" >
+        plc_part_class_uuid = #{plcPartClassUuid,jdbcType=VARCHAR},
+      </if>
+      <if test="pointUuid != null" >
+        point_uuid = #{pointUuid,jdbcType=VARCHAR},
+      </if>
+      <if test="partDisplayOrder != null" >
+        part_display_order = #{partDisplayOrder,jdbcType=INTEGER},
+      </if>
+      <if test="scadaPartClass != null" >
+        scada_part_class = #{scadaPartClass,jdbcType=VARCHAR},
+      </if>
+      <if test="masterControlPartClass != null" >
+        master_control_part_class = #{masterControlPartClass,jdbcType=VARCHAR},
+      </if>
+      <if test="fullEnglishName != null" >
+        full_english_name = #{fullEnglishName,jdbcType=VARCHAR},
+      </if>
+      <if test="englishAbbreviations != null" >
+        english_abbreviations = #{englishAbbreviations,jdbcType=VARCHAR},
+      </if>
+      <if test="remark != null" >
+        remark = #{remark,jdbcType=VARCHAR},
+      </if>
+      <if test="createBy != null" >
+        create_by = #{createBy,jdbcType=VARCHAR},
+      </if>
+      <if test="createTime != null" >
+        create_time = #{createTime,jdbcType=TIMESTAMP},
+      </if>
+      <if test="updateBy != null" >
+        update_by = #{updateBy,jdbcType=VARCHAR},
+      </if>
+      <if test="updateTime != null" >
+        update_time = #{updateTime,jdbcType=TIMESTAMP},
+      </if>
+      <if test="isDelete != null" >
+        is_delete = #{isDelete,jdbcType=INTEGER},
+      </if>
+    </set>
+    where id = #{id,jdbcType=INTEGER}
+  </update>
+  <update id="updateByPrimaryKey" parameterType="com.sany.mdm.entity.PlcPartClass" >
+    update plc_part_class
+    set plc_part_class_uuid = #{plcPartClassUuid,jdbcType=VARCHAR},
+      point_uuid = #{pointUuid,jdbcType=VARCHAR},
+      part_display_order = #{partDisplayOrder,jdbcType=INTEGER},
+      scada_part_class = #{scadaPartClass,jdbcType=VARCHAR},
+      master_control_part_class = #{masterControlPartClass,jdbcType=VARCHAR},
+      full_english_name = #{fullEnglishName,jdbcType=VARCHAR},
+      english_abbreviations = #{englishAbbreviations,jdbcType=VARCHAR},
+      remark = #{remark,jdbcType=VARCHAR},
+      create_by = #{createBy,jdbcType=VARCHAR},
+      create_time = #{createTime,jdbcType=TIMESTAMP},
+      update_by = #{updateBy,jdbcType=VARCHAR},
+      update_time = #{updateTime,jdbcType=TIMESTAMP},
+      is_delete = #{isDelete,jdbcType=INTEGER}
+    where id = #{id,jdbcType=INTEGER}
+  </update>
+</mapper>

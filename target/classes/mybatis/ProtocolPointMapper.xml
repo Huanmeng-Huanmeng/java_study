@@ -1,0 +1,419 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="com.sany.mdm.dao.ProtocolPointMapper" >
+  <resultMap id="BaseResultMap" type="com.sany.mdm.entity.ProtocolPoint" >
+    <id column="point_id" property="pointId" jdbcType="INTEGER" />
+    <result column="protocol_id" property="protocolId" jdbcType="INTEGER" />
+    <result column="point_name" property="pointName" jdbcType="VARCHAR" />
+    <result column="point_version" property="pointVersion" jdbcType="VARCHAR" />
+    <result column="protocol_type" property="protocolType" jdbcType="VARCHAR" />
+    <result column="upgrade_time" property="upgradeTime" jdbcType="TIMESTAMP" />
+    <result column="description" property="description" jdbcType="VARCHAR" />
+    <result column="scope" property="scope" jdbcType="VARCHAR" />
+    <result column="type" property="type" jdbcType="VARCHAR" />
+    <result column="local_path" property="localPath" jdbcType="VARCHAR" />
+    <result column="create_time" property="createTime" jdbcType="TIMESTAMP" />
+    <result column="point_uuid" property="pointUuid" jdbcType="VARCHAR" />
+    <result column="update_source_uuid" property="updateSourceUuid" jdbcType="VARCHAR" />
+    <result column="update_source_version" property="updateSourceVersion" jdbcType="VARCHAR" />
+    <result column="point_table_status" property="pointTableStatus" jdbcType="INTEGER" />
+    <result column="is_last" property="isLast" jdbcType="INTEGER" />
+    <result column="create_by" property="createBy" jdbcType="VARCHAR" />
+    <result column="update_by" property="updateBy" jdbcType="VARCHAR" />
+  </resultMap>
+  <sql id="Example_Where_Clause" >
+    <where >
+      <foreach collection="oredCriteria" item="criteria" separator="or" >
+        <if test="criteria.valid" >
+          <trim prefix="(" suffix=")" prefixOverrides="and" >
+            <foreach collection="criteria.criteria" item="criterion" >
+              <choose >
+                <when test="criterion.noValue" >
+                  and ${criterion.condition}
+                </when>
+                <when test="criterion.singleValue" >
+                  and ${criterion.condition} #{criterion.value}
+                </when>
+                <when test="criterion.betweenValue" >
+                  and ${criterion.condition} #{criterion.value} and #{criterion.secondValue}
+                </when>
+                <when test="criterion.listValue" >
+                  and ${criterion.condition}
+                  <foreach collection="criterion.value" item="listItem" open="(" close=")" separator="," >
+                    #{listItem}
+                  </foreach>
+                </when>
+              </choose>
+            </foreach>
+          </trim>
+        </if>
+      </foreach>
+    </where>
+  </sql>
+  <sql id="Update_By_Example_Where_Clause" >
+    <where >
+      <foreach collection="example.oredCriteria" item="criteria" separator="or" >
+        <if test="criteria.valid" >
+          <trim prefix="(" suffix=")" prefixOverrides="and" >
+            <foreach collection="criteria.criteria" item="criterion" >
+              <choose >
+                <when test="criterion.noValue" >
+                  and ${criterion.condition}
+                </when>
+                <when test="criterion.singleValue" >
+                  and ${criterion.condition} #{criterion.value}
+                </when>
+                <when test="criterion.betweenValue" >
+                  and ${criterion.condition} #{criterion.value} and #{criterion.secondValue}
+                </when>
+                <when test="criterion.listValue" >
+                  and ${criterion.condition}
+                  <foreach collection="criterion.value" item="listItem" open="(" close=")" separator="," >
+                    #{listItem}
+                  </foreach>
+                </when>
+              </choose>
+            </foreach>
+          </trim>
+        </if>
+      </foreach>
+    </where>
+  </sql>
+  <sql id="Base_Column_List" >
+    point_id, protocol_id, point_name, point_version, protocol_type, upgrade_time, description, 
+    scope, type, local_path, create_time, point_uuid, update_source_uuid, update_source_version, 
+    point_table_status, is_last, create_by, update_by
+  </sql>
+  <select id="selectByExample" resultMap="BaseResultMap" parameterType="com.sany.mdm.entity.ProtocolPointExample" >
+    select
+    <if test="distinct" >
+      distinct
+    </if>
+    'true' as QUERYID,
+    <include refid="Base_Column_List" />
+    from protocol_point
+    <if test="_parameter != null" >
+      <include refid="Example_Where_Clause" />
+    </if>
+    <if test="orderByClause != null" >
+      order by ${orderByClause}
+    </if>
+  </select>
+  <select id="selectByPrimaryKey" resultMap="BaseResultMap" parameterType="java.lang.Integer" >
+    select 
+    <include refid="Base_Column_List" />
+    from protocol_point
+    where point_id = #{pointId,jdbcType=INTEGER}
+  </select>
+  <delete id="deleteByPrimaryKey" parameterType="java.lang.Integer" >
+    delete from protocol_point
+    where point_id = #{pointId,jdbcType=INTEGER}
+  </delete>
+  <delete id="deleteByExample" parameterType="com.sany.mdm.entity.ProtocolPointExample" >
+    delete from protocol_point
+    <if test="_parameter != null" >
+      <include refid="Example_Where_Clause" />
+    </if>
+  </delete>
+  <insert id="insert" parameterType="com.sany.mdm.entity.ProtocolPoint" >
+    insert into protocol_point (point_id, protocol_id, point_name, 
+      point_version, protocol_type, upgrade_time, 
+      description, scope, type, 
+      local_path, create_time, point_uuid, 
+      update_source_uuid, update_source_version, 
+      point_table_status, is_last, create_by, 
+      update_by)
+    values (#{pointId,jdbcType=INTEGER}, #{protocolId,jdbcType=INTEGER}, #{pointName,jdbcType=VARCHAR}, 
+      #{pointVersion,jdbcType=VARCHAR}, #{protocolType,jdbcType=VARCHAR}, #{upgradeTime,jdbcType=TIMESTAMP}, 
+      #{description,jdbcType=VARCHAR}, #{scope,jdbcType=VARCHAR}, #{type,jdbcType=VARCHAR}, 
+      #{localPath,jdbcType=VARCHAR}, #{createTime,jdbcType=TIMESTAMP}, #{pointUuid,jdbcType=VARCHAR}, 
+      #{updateSourceUuid,jdbcType=VARCHAR}, #{updateSourceVersion,jdbcType=VARCHAR}, 
+      #{pointTableStatus,jdbcType=INTEGER}, #{isLast,jdbcType=INTEGER}, #{createBy,jdbcType=VARCHAR}, 
+      #{updateBy,jdbcType=VARCHAR})
+  </insert>
+  <insert id="insertSelective" parameterType="com.sany.mdm.entity.ProtocolPoint" >
+    insert into protocol_point
+    <trim prefix="(" suffix=")" suffixOverrides="," >
+      <if test="pointId != null" >
+        point_id,
+      </if>
+      <if test="protocolId != null" >
+        protocol_id,
+      </if>
+      <if test="pointName != null" >
+        point_name,
+      </if>
+      <if test="pointVersion != null" >
+        point_version,
+      </if>
+      <if test="protocolType != null" >
+        protocol_type,
+      </if>
+      <if test="upgradeTime != null" >
+        upgrade_time,
+      </if>
+      <if test="description != null" >
+        description,
+      </if>
+      <if test="scope != null" >
+        scope,
+      </if>
+      <if test="type != null" >
+        type,
+      </if>
+      <if test="localPath != null" >
+        local_path,
+      </if>
+      <if test="createTime != null" >
+        create_time,
+      </if>
+      <if test="pointUuid != null" >
+        point_uuid,
+      </if>
+      <if test="updateSourceUuid != null" >
+        update_source_uuid,
+      </if>
+      <if test="updateSourceVersion != null" >
+        update_source_version,
+      </if>
+      <if test="pointTableStatus != null" >
+        point_table_status,
+      </if>
+      <if test="isLast != null" >
+        is_last,
+      </if>
+      <if test="createBy != null" >
+        create_by,
+      </if>
+      <if test="updateBy != null" >
+        update_by,
+      </if>
+    </trim>
+    <trim prefix="values (" suffix=")" suffixOverrides="," >
+      <if test="pointId != null" >
+        #{pointId,jdbcType=INTEGER},
+      </if>
+      <if test="protocolId != null" >
+        #{protocolId,jdbcType=INTEGER},
+      </if>
+      <if test="pointName != null" >
+        #{pointName,jdbcType=VARCHAR},
+      </if>
+      <if test="pointVersion != null" >
+        #{pointVersion,jdbcType=VARCHAR},
+      </if>
+      <if test="protocolType != null" >
+        #{protocolType,jdbcType=VARCHAR},
+      </if>
+      <if test="upgradeTime != null" >
+        #{upgradeTime,jdbcType=TIMESTAMP},
+      </if>
+      <if test="description != null" >
+        #{description,jdbcType=VARCHAR},
+      </if>
+      <if test="scope != null" >
+        #{scope,jdbcType=VARCHAR},
+      </if>
+      <if test="type != null" >
+        #{type,jdbcType=VARCHAR},
+      </if>
+      <if test="localPath != null" >
+        #{localPath,jdbcType=VARCHAR},
+      </if>
+      <if test="createTime != null" >
+        #{createTime,jdbcType=TIMESTAMP},
+      </if>
+      <if test="pointUuid != null" >
+        #{pointUuid,jdbcType=VARCHAR},
+      </if>
+      <if test="updateSourceUuid != null" >
+        #{updateSourceUuid,jdbcType=VARCHAR},
+      </if>
+      <if test="updateSourceVersion != null" >
+        #{updateSourceVersion,jdbcType=VARCHAR},
+      </if>
+      <if test="pointTableStatus != null" >
+        #{pointTableStatus,jdbcType=INTEGER},
+      </if>
+      <if test="isLast != null" >
+        #{isLast,jdbcType=INTEGER},
+      </if>
+      <if test="createBy != null" >
+        #{createBy,jdbcType=VARCHAR},
+      </if>
+      <if test="updateBy != null" >
+        #{updateBy,jdbcType=VARCHAR},
+      </if>
+    </trim>
+  </insert>
+  <select id="countByExample" parameterType="com.sany.mdm.entity.ProtocolPointExample" resultType="java.lang.Integer" >
+    select count(*) from protocol_point
+    <if test="_parameter != null" >
+      <include refid="Example_Where_Clause" />
+    </if>
+  </select>
+  <update id="updateByExampleSelective" parameterType="map" >
+    update protocol_point
+    <set >
+      <if test="record.pointId != null" >
+        point_id = #{record.pointId,jdbcType=INTEGER},
+      </if>
+      <if test="record.protocolId != null" >
+        protocol_id = #{record.protocolId,jdbcType=INTEGER},
+      </if>
+      <if test="record.pointName != null" >
+        point_name = #{record.pointName,jdbcType=VARCHAR},
+      </if>
+      <if test="record.pointVersion != null" >
+        point_version = #{record.pointVersion,jdbcType=VARCHAR},
+      </if>
+      <if test="record.protocolType != null" >
+        protocol_type = #{record.protocolType,jdbcType=VARCHAR},
+      </if>
+      <if test="record.upgradeTime != null" >
+        upgrade_time = #{record.upgradeTime,jdbcType=TIMESTAMP},
+      </if>
+      <if test="record.description != null" >
+        description = #{record.description,jdbcType=VARCHAR},
+      </if>
+      <if test="record.scope != null" >
+        scope = #{record.scope,jdbcType=VARCHAR},
+      </if>
+      <if test="record.type != null" >
+        type = #{record.type,jdbcType=VARCHAR},
+      </if>
+      <if test="record.localPath != null" >
+        local_path = #{record.localPath,jdbcType=VARCHAR},
+      </if>
+      <if test="record.createTime != null" >
+        create_time = #{record.createTime,jdbcType=TIMESTAMP},
+      </if>
+      <if test="record.pointUuid != null" >
+        point_uuid = #{record.pointUuid,jdbcType=VARCHAR},
+      </if>
+      <if test="record.updateSourceUuid != null" >
+        update_source_uuid = #{record.updateSourceUuid,jdbcType=VARCHAR},
+      </if>
+      <if test="record.updateSourceVersion != null" >
+        update_source_version = #{record.updateSourceVersion,jdbcType=VARCHAR},
+      </if>
+      <if test="record.pointTableStatus != null" >
+        point_table_status = #{record.pointTableStatus,jdbcType=INTEGER},
+      </if>
+      <if test="record.isLast != null" >
+        is_last = #{record.isLast,jdbcType=INTEGER},
+      </if>
+      <if test="record.createBy != null" >
+        create_by = #{record.createBy,jdbcType=VARCHAR},
+      </if>
+      <if test="record.updateBy != null" >
+        update_by = #{record.updateBy,jdbcType=VARCHAR},
+      </if>
+    </set>
+    <if test="_parameter != null" >
+      <include refid="Update_By_Example_Where_Clause" />
+    </if>
+  </update>
+  <update id="updateByExample" parameterType="map" >
+    update protocol_point
+    set point_id = #{record.pointId,jdbcType=INTEGER},
+      protocol_id = #{record.protocolId,jdbcType=INTEGER},
+      point_name = #{record.pointName,jdbcType=VARCHAR},
+      point_version = #{record.pointVersion,jdbcType=VARCHAR},
+      protocol_type = #{record.protocolType,jdbcType=VARCHAR},
+      upgrade_time = #{record.upgradeTime,jdbcType=TIMESTAMP},
+      description = #{record.description,jdbcType=VARCHAR},
+      scope = #{record.scope,jdbcType=VARCHAR},
+      type = #{record.type,jdbcType=VARCHAR},
+      local_path = #{record.localPath,jdbcType=VARCHAR},
+      create_time = #{record.createTime,jdbcType=TIMESTAMP},
+      point_uuid = #{record.pointUuid,jdbcType=VARCHAR},
+      update_source_uuid = #{record.updateSourceUuid,jdbcType=VARCHAR},
+      update_source_version = #{record.updateSourceVersion,jdbcType=VARCHAR},
+      point_table_status = #{record.pointTableStatus,jdbcType=INTEGER},
+      is_last = #{record.isLast,jdbcType=INTEGER},
+      create_by = #{record.createBy,jdbcType=VARCHAR},
+      update_by = #{record.updateBy,jdbcType=VARCHAR}
+    <if test="_parameter != null" >
+      <include refid="Update_By_Example_Where_Clause" />
+    </if>
+  </update>
+  <update id="updateByPrimaryKeySelective" parameterType="com.sany.mdm.entity.ProtocolPoint" >
+    update protocol_point
+    <set >
+      <if test="protocolId != null" >
+        protocol_id = #{protocolId,jdbcType=INTEGER},
+      </if>
+      <if test="pointName != null" >
+        point_name = #{pointName,jdbcType=VARCHAR},
+      </if>
+      <if test="pointVersion != null" >
+        point_version = #{pointVersion,jdbcType=VARCHAR},
+      </if>
+      <if test="protocolType != null" >
+        protocol_type = #{protocolType,jdbcType=VARCHAR},
+      </if>
+      <if test="upgradeTime != null" >
+        upgrade_time = #{upgradeTime,jdbcType=TIMESTAMP},
+      </if>
+      <if test="description != null" >
+        description = #{description,jdbcType=VARCHAR},
+      </if>
+      <if test="scope != null" >
+        scope = #{scope,jdbcType=VARCHAR},
+      </if>
+      <if test="type != null" >
+        type = #{type,jdbcType=VARCHAR},
+      </if>
+      <if test="localPath != null" >
+        local_path = #{localPath,jdbcType=VARCHAR},
+      </if>
+      <if test="createTime != null" >
+        create_time = #{createTime,jdbcType=TIMESTAMP},
+      </if>
+      <if test="pointUuid != null" >
+        point_uuid = #{pointUuid,jdbcType=VARCHAR},
+      </if>
+      <if test="updateSourceUuid != null" >
+        update_source_uuid = #{updateSourceUuid,jdbcType=VARCHAR},
+      </if>
+      <if test="updateSourceVersion != null" >
+        update_source_version = #{updateSourceVersion,jdbcType=VARCHAR},
+      </if>
+      <if test="pointTableStatus != null" >
+        point_table_status = #{pointTableStatus,jdbcType=INTEGER},
+      </if>
+      <if test="isLast != null" >
+        is_last = #{isLast,jdbcType=INTEGER},
+      </if>
+      <if test="createBy != null" >
+        create_by = #{createBy,jdbcType=VARCHAR},
+      </if>
+      <if test="updateBy != null" >
+        update_by = #{updateBy,jdbcType=VARCHAR},
+      </if>
+    </set>
+    where point_id = #{pointId,jdbcType=INTEGER}
+  </update>
+  <update id="updateByPrimaryKey" parameterType="com.sany.mdm.entity.ProtocolPoint" >
+    update protocol_point
+    set protocol_id = #{protocolId,jdbcType=INTEGER},
+      point_name = #{pointName,jdbcType=VARCHAR},
+      point_version = #{pointVersion,jdbcType=VARCHAR},
+      protocol_type = #{protocolType,jdbcType=VARCHAR},
+      upgrade_time = #{upgradeTime,jdbcType=TIMESTAMP},
+      description = #{description,jdbcType=VARCHAR},
+      scope = #{scope,jdbcType=VARCHAR},
+      type = #{type,jdbcType=VARCHAR},
+      local_path = #{localPath,jdbcType=VARCHAR},
+      create_time = #{createTime,jdbcType=TIMESTAMP},
+      point_uuid = #{pointUuid,jdbcType=VARCHAR},
+      update_source_uuid = #{updateSourceUuid,jdbcType=VARCHAR},
+      update_source_version = #{updateSourceVersion,jdbcType=VARCHAR},
+      point_table_status = #{pointTableStatus,jdbcType=INTEGER},
+      is_last = #{isLast,jdbcType=INTEGER},
+      create_by = #{createBy,jdbcType=VARCHAR},
+      update_by = #{updateBy,jdbcType=VARCHAR}
+    where point_id = #{pointId,jdbcType=INTEGER}
+  </update>
+</mapper>

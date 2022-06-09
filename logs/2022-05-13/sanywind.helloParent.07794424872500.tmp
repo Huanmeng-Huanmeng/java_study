@@ -1,0 +1,516 @@
+[19:59:45.807] [main] [traceId:] [INFO ] [com.study.doc.properties.ReadProperties:142]: -----ALSFC风场校验开始-----
+[19:59:45.875] [main] [traceId:] [ERROR] [com.study.doc.properties.ReadProperties:314]: 不符合能管的关键配置文件校验的第二项：【agc avc】
+[19:59:45.875] [main] [traceId:] [ERROR] [com.study.doc.properties.ReadProperties:191]: 不符合能管的关键配置文件校验的第二项：【agc avc】
+[19:59:45.893] [main] [traceId:] [ERROR] [com.study.doc.properties.ReadProperties:337]: sany.ems.ratedpower属性的值必须为【C025】
+[19:59:45.897] [main] [traceId:] [ERROR] [com.study.doc.properties.ReadProperties:208]: 不符合能管的关键配置文件校验的第三项：【风机采集点  sany/settings/modbus-tags.xml】
+[19:59:45.898] [main] [traceId:] [ERROR] [com.study.doc.properties.ReadProperties:478]: 不符合能管的关键配置文件校验的第四项：【一次调频的配置】
+[19:59:45.898] [main] [traceId:] [ERROR] [com.study.doc.properties.ReadProperties:221]: 不符合能管的关键配置文件校验的第四项：【一次调频的配置】
+[19:59:45.898] [main] [traceId:] [ERROR] [com.study.doc.properties.ReadProperties:617]: 不符合能管的关键配置文件校验的第五项：【并网点】
+[19:59:45.899] [main] [traceId:] [ERROR] [com.study.doc.properties.ReadProperties:236]: 不符合能管的关键配置文件校验的第五项：【并网点】
+[19:59:45.899] [main] [traceId:] [INFO ] [com.study.doc.properties.ReadProperties:243]: ---能管的关键配置文件校验【正常结束】---
+[19:59:45.899] [main] [traceId:] [INFO ] [com.study.doc.properties.ReadProperties:145]: -----ALSFC风场校验结束-----
+[19:59:45.899] [main] [traceId:] [INFO ] [com.study.doc.properties.ReadProperties:142]: -----BDLFC风场校验开始-----
+[19:59:45.919] [main] [traceId:] [ERROR] [com.study.doc.properties.ReadProperties:314]: 不符合能管的关键配置文件校验的第二项：【agc avc】
+[19:59:45.919] [main] [traceId:] [ERROR] [com.study.doc.properties.ReadProperties:191]: 不符合能管的关键配置文件校验的第二项：【agc avc】
+[19:59:45.927] [main] [traceId:] [ERROR] [com.study.doc.properties.ReadProperties:337]: sany.ems.ratedpower属性的值必须为【C025】
+[19:59:45.928] [main] [traceId:] [ERROR] [com.study.doc.properties.ReadProperties:208]: 不符合能管的关键配置文件校验的第三项：【风机采集点  sany/settings/modbus-tags.xml】
+[19:59:45.928] [main] [traceId:] [ERROR] [com.study.doc.properties.ReadProperties:478]: 不符合能管的关键配置文件校验的第四项：【一次调频的配置】
+[19:59:45.929] [main] [traceId:] [ERROR] [com.study.doc.properties.ReadProperties:221]: 不符合能管的关键配置文件校验的第四项：【一次调频的配置】
+[19:59:45.929] [main] [traceId:] [ERROR] [com.study.doc.properties.ReadProperties:617]: 不符合能管的关键配置文件校验的第五项：【并网点】
+[19:59:45.929] [main] [traceId:] [ERROR] [com.study.doc.properties.ReadProperties:236]: 不符合能管的关键配置文件校验的第五项：【并网点】
+[19:59:45.929] [main] [traceId:] [INFO ] [com.study.doc.properties.ReadProperties:243]: ---能管的关键配置文件校验【正常结束】---
+[19:59:45.929] [main] [traceId:] [INFO ] [com.study.doc.properties.ReadProperties:145]: -----BDLFC风场校验结束-----
+[19:59:45.930] [main] [traceId:] [INFO ] [com.study.doc.properties.ReadProperties:142]: -----BLFC风场校验开始-----
+[19:59:46.105] [main] [traceId:] [INFO ] [com.study.doc.properties.ReadProperties:243]: ---能管的关键配置文件校验【正常结束】---
+[19:59:46.106] [main] [traceId:] [INFO ] [com.study.doc.properties.ReadProperties:145]: -----BLFC风场校验结束-----
+[19:59:46.106] [main] [traceId:] [INFO ] [com.study.doc.properties.ReadProperties:142]: -----BLHFCB风场校验开始-----
+[19:59:46.113] [main] [traceId:] [ERROR] [com.study.doc.properties.ReadProperties:314]: 不符合能管的关键配置文件校验的第二项：【agc avc】
+[19:59:46.113] [main] [traceId:] [ERROR] [com.study.doc.properties.ReadProperties:191]: 不符合能管的关键配置文件校验的第二项：【agc avc】
+[19:59:46.117] [main] [traceId:] [ERROR] [com.study.doc.properties.ReadProperties:337]: sany.ems.ratedpower属性的值必须为【C025】
+[19:59:46.118] [main] [traceId:] [ERROR] [com.study.doc.properties.ReadProperties:208]: 不符合能管的关键配置文件校验的第三项：【风机采集点  sany/settings/modbus-tags.xml】
+[19:59:46.118] [main] [traceId:] [ERROR] [com.study.doc.properties.ReadProperties:478]: 不符合能管的关键配置文件校验的第四项：【一次调频的配置】
+[19:59:46.118] [main] [traceId:] [ERROR] [com.study.doc.properties.ReadProperties:221]: 不符合能管的关键配置文件校验的第四项：【一次调频的配置】
+[19:59:46.118] [main] [traceId:] [ERROR] [com.study.doc.properties.ReadProperties:617]: 不符合能管的关键配置文件校验的第五项：【并网点】
+[19:59:46.119] [main] [traceId:] [ERROR] [com.study.doc.properties.ReadProperties:236]: 不符合能管的关键配置文件校验的第五项：【并网点】
+[19:59:46.119] [main] [traceId:] [INFO ] [com.study.doc.properties.ReadProperties:243]: ---能管的关键配置文件校验【正常结束】---
+[19:59:46.119] [main] [traceId:] [INFO ] [com.study.doc.properties.ReadProperties:145]: -----BLHFCB风场校验结束-----
+[19:59:46.119] [main] [traceId:] [INFO ] [com.study.doc.properties.ReadProperties:142]: -----CGHFC风场校验开始-----
+[19:59:46.152] [main] [traceId:] [ERROR] [com.study.doc.properties.ReadProperties:478]: 不符合能管的关键配置文件校验的第四项：【一次调频的配置】
+[19:59:46.152] [main] [traceId:] [ERROR] [com.study.doc.properties.ReadProperties:221]: 不符合能管的关键配置文件校验的第四项：【一次调频的配置】
+[19:59:46.156] [main] [traceId:] [ERROR] [com.study.doc.properties.ReadProperties:617]: 不符合能管的关键配置文件校验的第五项：【并网点】
+[19:59:46.156] [main] [traceId:] [ERROR] [com.study.doc.properties.ReadProperties:236]: 不符合能管的关键配置文件校验的第五项：【并网点】
+[19:59:46.156] [main] [traceId:] [INFO ] [com.study.doc.properties.ReadProperties:243]: ---能管的关键配置文件校验【正常结束】---
+[19:59:46.156] [main] [traceId:] [INFO ] [com.study.doc.properties.ReadProperties:145]: -----CGHFC风场校验结束-----
+[19:59:46.156] [main] [traceId:] [INFO ] [com.study.doc.properties.ReadProperties:142]: -----CSZY1风场校验开始-----
+[19:59:46.198] [main] [traceId:] [ERROR] [com.study.doc.properties.ReadProperties:314]: 不符合能管的关键配置文件校验的第二项：【agc avc】
+[19:59:46.199] [main] [traceId:] [ERROR] [com.study.doc.properties.ReadProperties:191]: 不符合能管的关键配置文件校验的第二项：【agc avc】
+[19:59:46.214] [main] [traceId:] [ERROR] [com.study.doc.properties.ReadProperties:478]: 不符合能管的关键配置文件校验的第四项：【一次调频的配置】
+[19:59:46.215] [main] [traceId:] [ERROR] [com.study.doc.properties.ReadProperties:221]: 不符合能管的关键配置文件校验的第四项：【一次调频的配置】
+[19:59:46.222] [main] [traceId:] [ERROR] [com.study.doc.properties.ReadProperties:617]: 不符合能管的关键配置文件校验的第五项：【并网点】
+[19:59:46.224] [main] [traceId:] [ERROR] [com.study.doc.properties.ReadProperties:236]: 不符合能管的关键配置文件校验的第五项：【并网点】
+[19:59:46.224] [main] [traceId:] [INFO ] [com.study.doc.properties.ReadProperties:243]: ---能管的关键配置文件校验【正常结束】---
+[19:59:46.224] [main] [traceId:] [INFO ] [com.study.doc.properties.ReadProperties:145]: -----CSZY1风场校验结束-----
+[19:59:46.224] [main] [traceId:] [INFO ] [com.study.doc.properties.ReadProperties:142]: -----CSZY2风场校验开始-----
+[19:59:46.240] [main] [traceId:] [ERROR] [com.study.doc.properties.ReadProperties:314]: 不符合能管的关键配置文件校验的第二项：【agc avc】
+[19:59:46.241] [main] [traceId:] [ERROR] [com.study.doc.properties.ReadProperties:191]: 不符合能管的关键配置文件校验的第二项：【agc avc】
+[19:59:46.245] [main] [traceId:] [ERROR] [com.study.doc.properties.ReadProperties:337]: sany.ems.ratedpower属性的值必须为【C025】
+[19:59:46.245] [main] [traceId:] [ERROR] [com.study.doc.properties.ReadProperties:208]: 不符合能管的关键配置文件校验的第三项：【风机采集点  sany/settings/modbus-tags.xml】
+[19:59:46.245] [main] [traceId:] [ERROR] [com.study.doc.properties.ReadProperties:478]: 不符合能管的关键配置文件校验的第四项：【一次调频的配置】
+[19:59:46.246] [main] [traceId:] [ERROR] [com.study.doc.properties.ReadProperties:221]: 不符合能管的关键配置文件校验的第四项：【一次调频的配置】
+[19:59:46.246] [main] [traceId:] [ERROR] [com.study.doc.properties.ReadProperties:617]: 不符合能管的关键配置文件校验的第五项：【并网点】
+[19:59:46.246] [main] [traceId:] [ERROR] [com.study.doc.properties.ReadProperties:236]: 不符合能管的关键配置文件校验的第五项：【并网点】
+[19:59:46.247] [main] [traceId:] [INFO ] [com.study.doc.properties.ReadProperties:243]: ---能管的关键配置文件校验【正常结束】---
+[19:59:46.247] [main] [traceId:] [INFO ] [com.study.doc.properties.ReadProperties:145]: -----CSZY2风场校验结束-----
+[19:59:46.247] [main] [traceId:] [INFO ] [com.study.doc.properties.ReadProperties:142]: -----CSZY2000风场校验开始-----
+[19:59:46.249] [main] [traceId:] [ERROR] [com.study.doc.properties.ReadProperties:251]: sany.farm.turbine.type属性不能为空或者空字符串
+[19:59:46.249] [main] [traceId:] [ERROR] [com.study.doc.properties.ReadProperties:171]: 不符合能管的关键配置文件校验的第一项：【功率曲线的配置】
+[19:59:46.252] [main] [traceId:] [ERROR] [com.study.doc.properties.ReadProperties:314]: 不符合能管的关键配置文件校验的第二项：【agc avc】
+[19:59:46.252] [main] [traceId:] [ERROR] [com.study.doc.properties.ReadProperties:191]: 不符合能管的关键配置文件校验的第二项：【agc avc】
+[19:59:46.256] [main] [traceId:] [ERROR] [com.study.doc.properties.ReadProperties:337]: sany.ems.ratedpower属性的值必须为【C025】
+[19:59:46.257] [main] [traceId:] [ERROR] [com.study.doc.properties.ReadProperties:208]: 不符合能管的关键配置文件校验的第三项：【风机采集点  sany/settings/modbus-tags.xml】
+[19:59:46.257] [main] [traceId:] [ERROR] [com.study.doc.properties.ReadProperties:478]: 不符合能管的关键配置文件校验的第四项：【一次调频的配置】
+[19:59:46.257] [main] [traceId:] [ERROR] [com.study.doc.properties.ReadProperties:221]: 不符合能管的关键配置文件校验的第四项：【一次调频的配置】
+[19:59:46.258] [main] [traceId:] [ERROR] [com.study.doc.properties.ReadProperties:617]: 不符合能管的关键配置文件校验的第五项：【并网点】
+[19:59:46.258] [main] [traceId:] [ERROR] [com.study.doc.properties.ReadProperties:236]: 不符合能管的关键配置文件校验的第五项：【并网点】
+[19:59:46.258] [main] [traceId:] [INFO ] [com.study.doc.properties.ReadProperties:243]: ---能管的关键配置文件校验【正常结束】---
+[19:59:46.258] [main] [traceId:] [INFO ] [com.study.doc.properties.ReadProperties:145]: -----CSZY2000风场校验结束-----
+[19:59:46.258] [main] [traceId:] [INFO ] [com.study.doc.properties.ReadProperties:142]: -----DBCFCA风场校验开始-----
+[19:59:46.287] [main] [traceId:] [INFO ] [com.study.doc.properties.ReadProperties:243]: ---能管的关键配置文件校验【正常结束】---
+[19:59:46.288] [main] [traceId:] [INFO ] [com.study.doc.properties.ReadProperties:145]: -----DBCFCA风场校验结束-----
+[19:59:46.288] [main] [traceId:] [INFO ] [com.study.doc.properties.ReadProperties:142]: -----DHTFC风场校验开始-----
+[19:59:46.329] [main] [traceId:] [ERROR] [com.study.doc.properties.ReadProperties:478]: 不符合能管的关键配置文件校验的第四项：【一次调频的配置】
+[19:59:46.329] [main] [traceId:] [ERROR] [com.study.doc.properties.ReadProperties:221]: 不符合能管的关键配置文件校验的第四项：【一次调频的配置】
+[19:59:46.330] [main] [traceId:] [ERROR] [com.study.doc.properties.ReadProperties:617]: 不符合能管的关键配置文件校验的第五项：【并网点】
+[19:59:46.330] [main] [traceId:] [ERROR] [com.study.doc.properties.ReadProperties:236]: 不符合能管的关键配置文件校验的第五项：【并网点】
+[19:59:46.330] [main] [traceId:] [INFO ] [com.study.doc.properties.ReadProperties:243]: ---能管的关键配置文件校验【正常结束】---
+[19:59:46.331] [main] [traceId:] [INFO ] [com.study.doc.properties.ReadProperties:145]: -----DHTFC风场校验结束-----
+[19:59:46.331] [main] [traceId:] [INFO ] [com.study.doc.properties.ReadProperties:142]: -----DSTFCB风场校验开始-----
+[19:59:46.358] [main] [traceId:] [INFO ] [com.study.doc.properties.ReadProperties:243]: ---能管的关键配置文件校验【正常结束】---
+[19:59:46.359] [main] [traceId:] [INFO ] [com.study.doc.properties.ReadProperties:145]: -----DSTFCB风场校验结束-----
+[19:59:46.359] [main] [traceId:] [INFO ] [com.study.doc.properties.ReadProperties:142]: -----GJBFCB风场校验开始-----
+[19:59:46.369] [main] [traceId:] [ERROR] [com.study.doc.properties.ReadProperties:314]: 不符合能管的关键配置文件校验的第二项：【agc avc】
+[19:59:46.370] [main] [traceId:] [ERROR] [com.study.doc.properties.ReadProperties:191]: 不符合能管的关键配置文件校验的第二项：【agc avc】
+[19:59:46.374] [main] [traceId:] [ERROR] [com.study.doc.properties.ReadProperties:337]: sany.ems.ratedpower属性的值必须为【C025】
+[19:59:46.374] [main] [traceId:] [ERROR] [com.study.doc.properties.ReadProperties:208]: 不符合能管的关键配置文件校验的第三项：【风机采集点  sany/settings/modbus-tags.xml】
+[19:59:46.374] [main] [traceId:] [ERROR] [com.study.doc.properties.ReadProperties:478]: 不符合能管的关键配置文件校验的第四项：【一次调频的配置】
+[19:59:46.375] [main] [traceId:] [ERROR] [com.study.doc.properties.ReadProperties:221]: 不符合能管的关键配置文件校验的第四项：【一次调频的配置】
+[19:59:46.375] [main] [traceId:] [ERROR] [com.study.doc.properties.ReadProperties:617]: 不符合能管的关键配置文件校验的第五项：【并网点】
+[19:59:46.375] [main] [traceId:] [ERROR] [com.study.doc.properties.ReadProperties:236]: 不符合能管的关键配置文件校验的第五项：【并网点】
+[19:59:46.375] [main] [traceId:] [INFO ] [com.study.doc.properties.ReadProperties:243]: ---能管的关键配置文件校验【正常结束】---
+[19:59:46.376] [main] [traceId:] [INFO ] [com.study.doc.properties.ReadProperties:145]: -----GJBFCB风场校验结束-----
+[19:59:46.376] [main] [traceId:] [INFO ] [com.study.doc.properties.ReadProperties:142]: -----GMFC风场校验开始-----
+[19:59:46.466] [main] [traceId:] [ERROR] [com.study.doc.properties.ReadProperties:617]: 不符合能管的关键配置文件校验的第五项：【并网点】
+[19:59:46.472] [main] [traceId:] [ERROR] [com.study.doc.properties.ReadProperties:236]: 不符合能管的关键配置文件校验的第五项：【并网点】
+[19:59:46.475] [main] [traceId:] [INFO ] [com.study.doc.properties.ReadProperties:243]: ---能管的关键配置文件校验【正常结束】---
+[19:59:46.476] [main] [traceId:] [INFO ] [com.study.doc.properties.ReadProperties:145]: -----GMFC风场校验结束-----
+[19:59:46.476] [main] [traceId:] [INFO ] [com.study.doc.properties.ReadProperties:142]: -----GSPCFC风场校验开始-----
+[19:59:46.507] [main] [traceId:] [ERROR] [com.study.doc.properties.ReadProperties:314]: 不符合能管的关键配置文件校验的第二项：【agc avc】
+[19:59:46.508] [main] [traceId:] [ERROR] [com.study.doc.properties.ReadProperties:191]: 不符合能管的关键配置文件校验的第二项：【agc avc】
+[19:59:46.515] [main] [traceId:] [ERROR] [com.study.doc.properties.ReadProperties:337]: sany.ems.ratedpower属性的值必须为【C025】
+[19:59:46.516] [main] [traceId:] [ERROR] [com.study.doc.properties.ReadProperties:208]: 不符合能管的关键配置文件校验的第三项：【风机采集点  sany/settings/modbus-tags.xml】
+[19:59:46.517] [main] [traceId:] [ERROR] [com.study.doc.properties.ReadProperties:478]: 不符合能管的关键配置文件校验的第四项：【一次调频的配置】
+[19:59:46.518] [main] [traceId:] [ERROR] [com.study.doc.properties.ReadProperties:221]: 不符合能管的关键配置文件校验的第四项：【一次调频的配置】
+[19:59:46.518] [main] [traceId:] [ERROR] [com.study.doc.properties.ReadProperties:617]: 不符合能管的关键配置文件校验的第五项：【并网点】
+[19:59:46.519] [main] [traceId:] [ERROR] [com.study.doc.properties.ReadProperties:236]: 不符合能管的关键配置文件校验的第五项：【并网点】
+[19:59:46.519] [main] [traceId:] [INFO ] [com.study.doc.properties.ReadProperties:243]: ---能管的关键配置文件校验【正常结束】---
+[19:59:46.519] [main] [traceId:] [INFO ] [com.study.doc.properties.ReadProperties:145]: -----GSPCFC风场校验结束-----
+[19:59:46.519] [main] [traceId:] [INFO ] [com.study.doc.properties.ReadProperties:142]: -----GYYHFC风场校验开始-----
+[19:59:46.593] [main] [traceId:] [INFO ] [com.study.doc.properties.ReadProperties:243]: ---能管的关键配置文件校验【正常结束】---
+[19:59:46.593] [main] [traceId:] [INFO ] [com.study.doc.properties.ReadProperties:145]: -----GYYHFC风场校验结束-----
+[19:59:46.594] [main] [traceId:] [INFO ] [com.study.doc.properties.ReadProperties:142]: -----GZBDQFCG风场校验开始-----
+[19:59:46.792] [main] [traceId:] [INFO ] [com.study.doc.properties.ReadProperties:243]: ---能管的关键配置文件校验【正常结束】---
+[19:59:46.792] [main] [traceId:] [INFO ] [com.study.doc.properties.ReadProperties:145]: -----GZBDQFCG风场校验结束-----
+[19:59:46.793] [main] [traceId:] [INFO ] [com.study.doc.properties.ReadProperties:142]: -----HGDSZFC风场校验开始-----
+[19:59:46.824] [main] [traceId:] [ERROR] [com.study.doc.properties.ReadProperties:617]: 不符合能管的关键配置文件校验的第五项：【并网点】
+[19:59:46.826] [main] [traceId:] [ERROR] [com.study.doc.properties.ReadProperties:236]: 不符合能管的关键配置文件校验的第五项：【并网点】
+[19:59:46.828] [main] [traceId:] [INFO ] [com.study.doc.properties.ReadProperties:243]: ---能管的关键配置文件校验【正常结束】---
+[19:59:46.829] [main] [traceId:] [INFO ] [com.study.doc.properties.ReadProperties:145]: -----HGDSZFC风场校验结束-----
+[19:59:46.830] [main] [traceId:] [INFO ] [com.study.doc.properties.ReadProperties:142]: -----HJLFC风场校验开始-----
+[19:59:46.880] [main] [traceId:] [ERROR] [com.study.doc.properties.ReadProperties:314]: 不符合能管的关键配置文件校验的第二项：【agc avc】
+[19:59:46.881] [main] [traceId:] [ERROR] [com.study.doc.properties.ReadProperties:191]: 不符合能管的关键配置文件校验的第二项：【agc avc】
+[19:59:46.885] [main] [traceId:] [ERROR] [com.study.doc.properties.ReadProperties:337]: sany.ems.ratedpower属性的值必须为【C025】
+[19:59:46.886] [main] [traceId:] [ERROR] [com.study.doc.properties.ReadProperties:208]: 不符合能管的关键配置文件校验的第三项：【风机采集点  sany/settings/modbus-tags.xml】
+[19:59:46.886] [main] [traceId:] [ERROR] [com.study.doc.properties.ReadProperties:478]: 不符合能管的关键配置文件校验的第四项：【一次调频的配置】
+[19:59:46.887] [main] [traceId:] [ERROR] [com.study.doc.properties.ReadProperties:221]: 不符合能管的关键配置文件校验的第四项：【一次调频的配置】
+[19:59:46.887] [main] [traceId:] [ERROR] [com.study.doc.properties.ReadProperties:617]: 不符合能管的关键配置文件校验的第五项：【并网点】
+[19:59:46.887] [main] [traceId:] [ERROR] [com.study.doc.properties.ReadProperties:236]: 不符合能管的关键配置文件校验的第五项：【并网点】
+[19:59:46.888] [main] [traceId:] [INFO ] [com.study.doc.properties.ReadProperties:243]: ---能管的关键配置文件校验【正常结束】---
+[19:59:46.888] [main] [traceId:] [INFO ] [com.study.doc.properties.ReadProperties:145]: -----HJLFC风场校验结束-----
+[19:59:46.888] [main] [traceId:] [INFO ] [com.study.doc.properties.ReadProperties:142]: -----HJLFCA风场校验开始-----
+[19:59:46.962] [main] [traceId:] [ERROR] [com.study.doc.properties.ReadProperties:478]: 不符合能管的关键配置文件校验的第四项：【一次调频的配置】
+[19:59:46.963] [main] [traceId:] [ERROR] [com.study.doc.properties.ReadProperties:221]: 不符合能管的关键配置文件校验的第四项：【一次调频的配置】
+[19:59:46.965] [main] [traceId:] [INFO ] [com.study.doc.properties.ReadProperties:243]: ---能管的关键配置文件校验【正常结束】---
+[19:59:46.966] [main] [traceId:] [INFO ] [com.study.doc.properties.ReadProperties:145]: -----HJLFCA风场校验结束-----
+[19:59:46.966] [main] [traceId:] [INFO ] [com.study.doc.properties.ReadProperties:142]: -----HJLFCB风场校验开始-----
+[19:59:47.085] [main] [traceId:] [ERROR] [com.study.doc.properties.ReadProperties:478]: 不符合能管的关键配置文件校验的第四项：【一次调频的配置】
+[19:59:47.085] [main] [traceId:] [ERROR] [com.study.doc.properties.ReadProperties:221]: 不符合能管的关键配置文件校验的第四项：【一次调频的配置】
+[19:59:47.099] [main] [traceId:] [INFO ] [com.study.doc.properties.ReadProperties:243]: ---能管的关键配置文件校验【正常结束】---
+[19:59:47.099] [main] [traceId:] [INFO ] [com.study.doc.properties.ReadProperties:145]: -----HJLFCB风场校验结束-----
+[19:59:47.100] [main] [traceId:] [INFO ] [com.study.doc.properties.ReadProperties:142]: -----HLYJFCB风场校验开始-----
+[19:59:47.221] [main] [traceId:] [ERROR] [com.study.doc.properties.ReadProperties:314]: 不符合能管的关键配置文件校验的第二项：【agc avc】
+[19:59:47.244] [main] [traceId:] [ERROR] [com.study.doc.properties.ReadProperties:191]: 不符合能管的关键配置文件校验的第二项：【agc avc】
+[19:59:47.515] [main] [traceId:] [ERROR] [com.study.doc.properties.ReadProperties:478]: 不符合能管的关键配置文件校验的第四项：【一次调频的配置】
+[19:59:47.515] [main] [traceId:] [ERROR] [com.study.doc.properties.ReadProperties:221]: 不符合能管的关键配置文件校验的第四项：【一次调频的配置】
+[19:59:47.515] [main] [traceId:] [ERROR] [com.study.doc.properties.ReadProperties:617]: 不符合能管的关键配置文件校验的第五项：【并网点】
+[19:59:47.526] [main] [traceId:] [ERROR] [com.study.doc.properties.ReadProperties:236]: 不符合能管的关键配置文件校验的第五项：【并网点】
+[19:59:47.527] [main] [traceId:] [INFO ] [com.study.doc.properties.ReadProperties:243]: ---能管的关键配置文件校验【正常结束】---
+[19:59:47.528] [main] [traceId:] [INFO ] [com.study.doc.properties.ReadProperties:145]: -----HLYJFCB风场校验结束-----
+[19:59:47.528] [main] [traceId:] [INFO ] [com.study.doc.properties.ReadProperties:142]: -----HNZBFC风场校验开始-----
+[19:59:47.544] [main] [traceId:] [ERROR] [com.study.doc.properties.ReadProperties:314]: 不符合能管的关键配置文件校验的第二项：【agc avc】
+[19:59:47.544] [main] [traceId:] [ERROR] [com.study.doc.properties.ReadProperties:191]: 不符合能管的关键配置文件校验的第二项：【agc avc】
+[19:59:47.549] [main] [traceId:] [ERROR] [com.study.doc.properties.ReadProperties:337]: sany.ems.ratedpower属性的值必须为【C025】
+[19:59:47.550] [main] [traceId:] [ERROR] [com.study.doc.properties.ReadProperties:208]: 不符合能管的关键配置文件校验的第三项：【风机采集点  sany/settings/modbus-tags.xml】
+[19:59:47.550] [main] [traceId:] [ERROR] [com.study.doc.properties.ReadProperties:478]: 不符合能管的关键配置文件校验的第四项：【一次调频的配置】
+[19:59:47.550] [main] [traceId:] [ERROR] [com.study.doc.properties.ReadProperties:221]: 不符合能管的关键配置文件校验的第四项：【一次调频的配置】
+[19:59:47.551] [main] [traceId:] [ERROR] [com.study.doc.properties.ReadProperties:617]: 不符合能管的关键配置文件校验的第五项：【并网点】
+[19:59:47.551] [main] [traceId:] [ERROR] [com.study.doc.properties.ReadProperties:236]: 不符合能管的关键配置文件校验的第五项：【并网点】
+[19:59:47.551] [main] [traceId:] [INFO ] [com.study.doc.properties.ReadProperties:243]: ---能管的关键配置文件校验【正常结束】---
+[19:59:47.552] [main] [traceId:] [INFO ] [com.study.doc.properties.ReadProperties:145]: -----HNZBFC风场校验结束-----
+[19:59:47.552] [main] [traceId:] [INFO ] [com.study.doc.properties.ReadProperties:142]: -----HQFC风场校验开始-----
+[19:59:47.906] [main] [traceId:] [ERROR] [com.study.doc.properties.ReadProperties:617]: 不符合能管的关键配置文件校验的第五项：【并网点】
+[19:59:47.906] [main] [traceId:] [ERROR] [com.study.doc.properties.ReadProperties:236]: 不符合能管的关键配置文件校验的第五项：【并网点】
+[19:59:47.906] [main] [traceId:] [INFO ] [com.study.doc.properties.ReadProperties:243]: ---能管的关键配置文件校验【正常结束】---
+[19:59:47.906] [main] [traceId:] [INFO ] [com.study.doc.properties.ReadProperties:145]: -----HQFC风场校验结束-----
+[19:59:47.907] [main] [traceId:] [INFO ] [com.study.doc.properties.ReadProperties:142]: -----HYSFCA风场校验开始-----
+[19:59:48.137] [main] [traceId:] [INFO ] [com.study.doc.properties.ReadProperties:243]: ---能管的关键配置文件校验【正常结束】---
+[19:59:48.137] [main] [traceId:] [INFO ] [com.study.doc.properties.ReadProperties:145]: -----HYSFCA风场校验结束-----
+[19:59:48.137] [main] [traceId:] [INFO ] [com.study.doc.properties.ReadProperties:142]: -----HYSFCB风场校验开始-----
+[19:59:48.390] [main] [traceId:] [INFO ] [com.study.doc.properties.ReadProperties:243]: ---能管的关键配置文件校验【正常结束】---
+[19:59:48.390] [main] [traceId:] [INFO ] [com.study.doc.properties.ReadProperties:145]: -----HYSFCB风场校验结束-----
+[19:59:48.390] [main] [traceId:] [INFO ] [com.study.doc.properties.ReadProperties:142]: -----JHYJRDFC风场校验开始-----
+[19:59:48.638] [main] [traceId:] [ERROR] [com.study.doc.properties.ReadProperties:617]: 不符合能管的关键配置文件校验的第五项：【并网点】
+[19:59:48.639] [main] [traceId:] [ERROR] [com.study.doc.properties.ReadProperties:236]: 不符合能管的关键配置文件校验的第五项：【并网点】
+[19:59:48.639] [main] [traceId:] [INFO ] [com.study.doc.properties.ReadProperties:243]: ---能管的关键配置文件校验【正常结束】---
+[19:59:48.639] [main] [traceId:] [INFO ] [com.study.doc.properties.ReadProperties:145]: -----JHYJRDFC风场校验结束-----
+[19:59:48.639] [main] [traceId:] [INFO ] [com.study.doc.properties.ReadProperties:142]: -----LFFC风场校验开始-----
+[19:59:48.745] [main] [traceId:] [ERROR] [com.study.doc.properties.ReadProperties:617]: 不符合能管的关键配置文件校验的第五项：【并网点】
+[19:59:48.746] [main] [traceId:] [ERROR] [com.study.doc.properties.ReadProperties:236]: 不符合能管的关键配置文件校验的第五项：【并网点】
+[19:59:48.746] [main] [traceId:] [INFO ] [com.study.doc.properties.ReadProperties:243]: ---能管的关键配置文件校验【正常结束】---
+[19:59:48.746] [main] [traceId:] [INFO ] [com.study.doc.properties.ReadProperties:145]: -----LFFC风场校验结束-----
+[19:59:48.747] [main] [traceId:] [INFO ] [com.study.doc.properties.ReadProperties:142]: -----LGZLFC风场校验开始-----
+[19:59:48.854] [main] [traceId:] [INFO ] [com.study.doc.properties.ReadProperties:243]: ---能管的关键配置文件校验【正常结束】---
+[19:59:48.855] [main] [traceId:] [INFO ] [com.study.doc.properties.ReadProperties:145]: -----LGZLFC风场校验结束-----
+[19:59:48.855] [main] [traceId:] [INFO ] [com.study.doc.properties.ReadProperties:142]: -----LTFC风场校验开始-----
+[19:59:48.859] [main] [traceId:] [ERROR] [com.study.doc.properties.ReadProperties:314]: 不符合能管的关键配置文件校验的第二项：【agc avc】
+[19:59:48.860] [main] [traceId:] [ERROR] [com.study.doc.properties.ReadProperties:191]: 不符合能管的关键配置文件校验的第二项：【agc avc】
+[19:59:48.863] [main] [traceId:] [ERROR] [com.study.doc.properties.ReadProperties:337]: sany.ems.ratedpower属性的值必须为【C025】
+[19:59:48.863] [main] [traceId:] [ERROR] [com.study.doc.properties.ReadProperties:208]: 不符合能管的关键配置文件校验的第三项：【风机采集点  sany/settings/modbus-tags.xml】
+[19:59:48.863] [main] [traceId:] [ERROR] [com.study.doc.properties.ReadProperties:478]: 不符合能管的关键配置文件校验的第四项：【一次调频的配置】
+[19:59:48.863] [main] [traceId:] [ERROR] [com.study.doc.properties.ReadProperties:221]: 不符合能管的关键配置文件校验的第四项：【一次调频的配置】
+[19:59:48.863] [main] [traceId:] [ERROR] [com.study.doc.properties.ReadProperties:617]: 不符合能管的关键配置文件校验的第五项：【并网点】
+[19:59:48.864] [main] [traceId:] [ERROR] [com.study.doc.properties.ReadProperties:236]: 不符合能管的关键配置文件校验的第五项：【并网点】
+[19:59:48.864] [main] [traceId:] [INFO ] [com.study.doc.properties.ReadProperties:243]: ---能管的关键配置文件校验【正常结束】---
+[19:59:48.864] [main] [traceId:] [INFO ] [com.study.doc.properties.ReadProperties:145]: -----LTFC风场校验结束-----
+[19:59:48.864] [main] [traceId:] [INFO ] [com.study.doc.properties.ReadProperties:142]: -----LXSFC风场校验开始-----
+[19:59:48.869] [main] [traceId:] [ERROR] [com.study.doc.properties.ReadProperties:314]: 不符合能管的关键配置文件校验的第二项：【agc avc】
+[19:59:48.869] [main] [traceId:] [ERROR] [com.study.doc.properties.ReadProperties:191]: 不符合能管的关键配置文件校验的第二项：【agc avc】
+[19:59:48.873] [main] [traceId:] [ERROR] [com.study.doc.properties.ReadProperties:337]: sany.ems.ratedpower属性的值必须为【C025】
+[19:59:48.873] [main] [traceId:] [ERROR] [com.study.doc.properties.ReadProperties:208]: 不符合能管的关键配置文件校验的第三项：【风机采集点  sany/settings/modbus-tags.xml】
+[19:59:48.873] [main] [traceId:] [ERROR] [com.study.doc.properties.ReadProperties:478]: 不符合能管的关键配置文件校验的第四项：【一次调频的配置】
+[19:59:48.873] [main] [traceId:] [ERROR] [com.study.doc.properties.ReadProperties:221]: 不符合能管的关键配置文件校验的第四项：【一次调频的配置】
+[19:59:48.874] [main] [traceId:] [ERROR] [com.study.doc.properties.ReadProperties:617]: 不符合能管的关键配置文件校验的第五项：【并网点】
+[19:59:48.874] [main] [traceId:] [ERROR] [com.study.doc.properties.ReadProperties:236]: 不符合能管的关键配置文件校验的第五项：【并网点】
+[19:59:48.874] [main] [traceId:] [INFO ] [com.study.doc.properties.ReadProperties:243]: ---能管的关键配置文件校验【正常结束】---
+[19:59:48.874] [main] [traceId:] [INFO ] [com.study.doc.properties.ReadProperties:145]: -----LXSFC风场校验结束-----
+[19:59:48.874] [main] [traceId:] [INFO ] [com.study.doc.properties.ReadProperties:142]: -----LYCFC风场校验开始-----
+[19:59:48.910] [main] [traceId:] [INFO ] [com.study.doc.properties.ReadProperties:243]: ---能管的关键配置文件校验【正常结束】---
+[19:59:48.910] [main] [traceId:] [INFO ] [com.study.doc.properties.ReadProperties:145]: -----LYCFC风场校验结束-----
+[19:59:48.911] [main] [traceId:] [INFO ] [com.study.doc.properties.ReadProperties:142]: -----LYFC风场校验开始-----
+[19:59:48.953] [main] [traceId:] [ERROR] [com.study.doc.properties.ReadProperties:617]: 不符合能管的关键配置文件校验的第五项：【并网点】
+[19:59:48.953] [main] [traceId:] [ERROR] [com.study.doc.properties.ReadProperties:236]: 不符合能管的关键配置文件校验的第五项：【并网点】
+[19:59:48.954] [main] [traceId:] [INFO ] [com.study.doc.properties.ReadProperties:243]: ---能管的关键配置文件校验【正常结束】---
+[19:59:48.954] [main] [traceId:] [INFO ] [com.study.doc.properties.ReadProperties:145]: -----LYFC风场校验结束-----
+[19:59:48.954] [main] [traceId:] [INFO ] [com.study.doc.properties.ReadProperties:142]: -----MBSFC风场校验开始-----
+[19:59:48.984] [main] [traceId:] [ERROR] [com.study.doc.properties.ReadProperties:617]: 不符合能管的关键配置文件校验的第五项：【并网点】
+[19:59:48.984] [main] [traceId:] [ERROR] [com.study.doc.properties.ReadProperties:236]: 不符合能管的关键配置文件校验的第五项：【并网点】
+[19:59:48.984] [main] [traceId:] [INFO ] [com.study.doc.properties.ReadProperties:243]: ---能管的关键配置文件校验【正常结束】---
+[19:59:48.985] [main] [traceId:] [INFO ] [com.study.doc.properties.ReadProperties:145]: -----MBSFC风场校验结束-----
+[19:59:48.985] [main] [traceId:] [INFO ] [com.study.doc.properties.ReadProperties:142]: -----NKJGFC风场校验开始-----
+[19:59:48.989] [main] [traceId:] [ERROR] [com.study.doc.properties.ReadProperties:314]: 不符合能管的关键配置文件校验的第二项：【agc avc】
+[19:59:48.989] [main] [traceId:] [ERROR] [com.study.doc.properties.ReadProperties:191]: 不符合能管的关键配置文件校验的第二项：【agc avc】
+[19:59:48.994] [main] [traceId:] [ERROR] [com.study.doc.properties.ReadProperties:478]: 不符合能管的关键配置文件校验的第四项：【一次调频的配置】
+[19:59:48.994] [main] [traceId:] [ERROR] [com.study.doc.properties.ReadProperties:221]: 不符合能管的关键配置文件校验的第四项：【一次调频的配置】
+[19:59:48.994] [main] [traceId:] [ERROR] [com.study.doc.properties.ReadProperties:617]: 不符合能管的关键配置文件校验的第五项：【并网点】
+[19:59:48.997] [main] [traceId:] [ERROR] [com.study.doc.properties.ReadProperties:236]: 不符合能管的关键配置文件校验的第五项：【并网点】
+[19:59:48.997] [main] [traceId:] [INFO ] [com.study.doc.properties.ReadProperties:243]: ---能管的关键配置文件校验【正常结束】---
+[19:59:48.997] [main] [traceId:] [INFO ] [com.study.doc.properties.ReadProperties:145]: -----NKJGFC风场校验结束-----
+[19:59:48.997] [main] [traceId:] [INFO ] [com.study.doc.properties.ReadProperties:142]: -----NMTMFC风场校验开始-----
+[19:59:49.044] [main] [traceId:] [ERROR] [com.study.doc.properties.ReadProperties:617]: 不符合能管的关键配置文件校验的第五项：【并网点】
+[19:59:49.045] [main] [traceId:] [ERROR] [com.study.doc.properties.ReadProperties:236]: 不符合能管的关键配置文件校验的第五项：【并网点】
+[19:59:49.045] [main] [traceId:] [INFO ] [com.study.doc.properties.ReadProperties:243]: ---能管的关键配置文件校验【正常结束】---
+[19:59:49.045] [main] [traceId:] [INFO ] [com.study.doc.properties.ReadProperties:145]: -----NMTMFC风场校验结束-----
+[19:59:49.045] [main] [traceId:] [INFO ] [com.study.doc.properties.ReadProperties:142]: -----NXFC风场校验开始-----
+[19:59:49.091] [main] [traceId:] [INFO ] [com.study.doc.properties.ReadProperties:243]: ---能管的关键配置文件校验【正常结束】---
+[19:59:49.092] [main] [traceId:] [INFO ] [com.study.doc.properties.ReadProperties:145]: -----NXFC风场校验结束-----
+[19:59:49.092] [main] [traceId:] [INFO ] [com.study.doc.properties.ReadProperties:142]: -----PLFC风场校验开始-----
+[19:59:49.115] [main] [traceId:] [ERROR] [com.study.doc.properties.ReadProperties:617]: 不符合能管的关键配置文件校验的第五项：【并网点】
+[19:59:49.115] [main] [traceId:] [ERROR] [com.study.doc.properties.ReadProperties:236]: 不符合能管的关键配置文件校验的第五项：【并网点】
+[19:59:49.116] [main] [traceId:] [INFO ] [com.study.doc.properties.ReadProperties:243]: ---能管的关键配置文件校验【正常结束】---
+[19:59:49.116] [main] [traceId:] [INFO ] [com.study.doc.properties.ReadProperties:145]: -----PLFC风场校验结束-----
+[19:59:49.116] [main] [traceId:] [INFO ] [com.study.doc.properties.ReadProperties:142]: -----PLSFCC风场校验开始-----
+[19:59:49.146] [main] [traceId:] [ERROR] [com.study.doc.properties.ReadProperties:617]: 不符合能管的关键配置文件校验的第五项：【并网点】
+[19:59:49.146] [main] [traceId:] [ERROR] [com.study.doc.properties.ReadProperties:236]: 不符合能管的关键配置文件校验的第五项：【并网点】
+[19:59:49.146] [main] [traceId:] [INFO ] [com.study.doc.properties.ReadProperties:243]: ---能管的关键配置文件校验【正常结束】---
+[19:59:49.147] [main] [traceId:] [INFO ] [com.study.doc.properties.ReadProperties:145]: -----PLSFCC风场校验结束-----
+[19:59:49.147] [main] [traceId:] [INFO ] [com.study.doc.properties.ReadProperties:142]: -----PLSFCD风场校验开始-----
+[19:59:49.167] [main] [traceId:] [ERROR] [com.study.doc.properties.ReadProperties:617]: 不符合能管的关键配置文件校验的第五项：【并网点】
+[19:59:49.168] [main] [traceId:] [ERROR] [com.study.doc.properties.ReadProperties:236]: 不符合能管的关键配置文件校验的第五项：【并网点】
+[19:59:49.168] [main] [traceId:] [INFO ] [com.study.doc.properties.ReadProperties:243]: ---能管的关键配置文件校验【正常结束】---
+[19:59:49.168] [main] [traceId:] [INFO ] [com.study.doc.properties.ReadProperties:145]: -----PLSFCD风场校验结束-----
+[19:59:49.168] [main] [traceId:] [INFO ] [com.study.doc.properties.ReadProperties:142]: -----PMSFC风场校验开始-----
+[19:59:49.201] [main] [traceId:] [ERROR] [com.study.doc.properties.ReadProperties:478]: 不符合能管的关键配置文件校验的第四项：【一次调频的配置】
+[19:59:49.201] [main] [traceId:] [ERROR] [com.study.doc.properties.ReadProperties:221]: 不符合能管的关键配置文件校验的第四项：【一次调频的配置】
+[19:59:49.205] [main] [traceId:] [INFO ] [com.study.doc.properties.ReadProperties:243]: ---能管的关键配置文件校验【正常结束】---
+[19:59:49.205] [main] [traceId:] [INFO ] [com.study.doc.properties.ReadProperties:145]: -----PMSFC风场校验结束-----
+[19:59:49.205] [main] [traceId:] [INFO ] [com.study.doc.properties.ReadProperties:142]: -----PTCFC风场校验开始-----
+[19:59:49.272] [main] [traceId:] [INFO ] [com.study.doc.properties.ReadProperties:243]: ---能管的关键配置文件校验【正常结束】---
+[19:59:49.272] [main] [traceId:] [INFO ] [com.study.doc.properties.ReadProperties:145]: -----PTCFC风场校验结束-----
+[19:59:49.272] [main] [traceId:] [INFO ] [com.study.doc.properties.ReadProperties:142]: -----PTSFC风场校验开始-----
+[19:59:49.291] [main] [traceId:] [INFO ] [com.study.doc.properties.ReadProperties:243]: ---能管的关键配置文件校验【正常结束】---
+[19:59:49.292] [main] [traceId:] [INFO ] [com.study.doc.properties.ReadProperties:145]: -----PTSFC风场校验结束-----
+[19:59:49.292] [main] [traceId:] [INFO ] [com.study.doc.properties.ReadProperties:142]: -----QHFMFC风场校验开始-----
+[19:59:49.318] [main] [traceId:] [ERROR] [com.study.doc.properties.ReadProperties:617]: 不符合能管的关键配置文件校验的第五项：【并网点】
+[19:59:49.319] [main] [traceId:] [ERROR] [com.study.doc.properties.ReadProperties:236]: 不符合能管的关键配置文件校验的第五项：【并网点】
+[19:59:49.319] [main] [traceId:] [INFO ] [com.study.doc.properties.ReadProperties:243]: ---能管的关键配置文件校验【正常结束】---
+[19:59:49.319] [main] [traceId:] [INFO ] [com.study.doc.properties.ReadProperties:145]: -----QHFMFC风场校验结束-----
+[19:59:49.319] [main] [traceId:] [INFO ] [com.study.doc.properties.ReadProperties:142]: -----QJLTBFC风场校验开始-----
+[19:59:49.332] [main] [traceId:] [ERROR] [com.study.doc.properties.ReadProperties:478]: 不符合能管的关键配置文件校验的第四项：【一次调频的配置】
+[19:59:49.333] [main] [traceId:] [ERROR] [com.study.doc.properties.ReadProperties:221]: 不符合能管的关键配置文件校验的第四项：【一次调频的配置】
+[19:59:49.336] [main] [traceId:] [INFO ] [com.study.doc.properties.ReadProperties:243]: ---能管的关键配置文件校验【正常结束】---
+[19:59:49.336] [main] [traceId:] [INFO ] [com.study.doc.properties.ReadProperties:145]: -----QJLTBFC风场校验结束-----
+[19:59:49.336] [main] [traceId:] [INFO ] [com.study.doc.properties.ReadProperties:142]: -----QNFCB风场校验开始-----
+[19:59:49.356] [main] [traceId:] [ERROR] [com.study.doc.properties.ReadProperties:478]: 不符合能管的关键配置文件校验的第四项：【一次调频的配置】
+[19:59:49.357] [main] [traceId:] [ERROR] [com.study.doc.properties.ReadProperties:221]: 不符合能管的关键配置文件校验的第四项：【一次调频的配置】
+[19:59:49.357] [main] [traceId:] [ERROR] [com.study.doc.properties.ReadProperties:617]: 不符合能管的关键配置文件校验的第五项：【并网点】
+[19:59:49.357] [main] [traceId:] [ERROR] [com.study.doc.properties.ReadProperties:236]: 不符合能管的关键配置文件校验的第五项：【并网点】
+[19:59:49.357] [main] [traceId:] [INFO ] [com.study.doc.properties.ReadProperties:243]: ---能管的关键配置文件校验【正常结束】---
+[19:59:49.357] [main] [traceId:] [INFO ] [com.study.doc.properties.ReadProperties:145]: -----QNFCB风场校验结束-----
+[19:59:49.357] [main] [traceId:] [INFO ] [com.study.doc.properties.ReadProperties:142]: -----QSGFC风场校验开始-----
+[19:59:49.361] [main] [traceId:] [ERROR] [com.study.doc.properties.ReadProperties:314]: 不符合能管的关键配置文件校验的第二项：【agc avc】
+[19:59:49.361] [main] [traceId:] [ERROR] [com.study.doc.properties.ReadProperties:191]: 不符合能管的关键配置文件校验的第二项：【agc avc】
+[19:59:49.364] [main] [traceId:] [ERROR] [com.study.doc.properties.ReadProperties:478]: 不符合能管的关键配置文件校验的第四项：【一次调频的配置】
+[19:59:49.364] [main] [traceId:] [ERROR] [com.study.doc.properties.ReadProperties:221]: 不符合能管的关键配置文件校验的第四项：【一次调频的配置】
+[19:59:49.364] [main] [traceId:] [ERROR] [com.study.doc.properties.ReadProperties:617]: 不符合能管的关键配置文件校验的第五项：【并网点】
+[19:59:49.365] [main] [traceId:] [ERROR] [com.study.doc.properties.ReadProperties:236]: 不符合能管的关键配置文件校验的第五项：【并网点】
+[19:59:49.365] [main] [traceId:] [INFO ] [com.study.doc.properties.ReadProperties:243]: ---能管的关键配置文件校验【正常结束】---
+[19:59:49.365] [main] [traceId:] [INFO ] [com.study.doc.properties.ReadProperties:145]: -----QSGFC风场校验结束-----
+[19:59:49.365] [main] [traceId:] [INFO ] [com.study.doc.properties.ReadProperties:142]: -----QTXFC风场校验开始-----
+[19:59:49.389] [main] [traceId:] [INFO ] [com.study.doc.properties.ReadProperties:243]: ---能管的关键配置文件校验【正常结束】---
+[19:59:49.390] [main] [traceId:] [INFO ] [com.study.doc.properties.ReadProperties:145]: -----QTXFC风场校验结束-----
+[19:59:49.390] [main] [traceId:] [INFO ] [com.study.doc.properties.ReadProperties:142]: -----RCJGFC风场校验开始-----
+[19:59:49.409] [main] [traceId:] [INFO ] [com.study.doc.properties.ReadProperties:243]: ---能管的关键配置文件校验【正常结束】---
+[19:59:49.410] [main] [traceId:] [INFO ] [com.study.doc.properties.ReadProperties:145]: -----RCJGFC风场校验结束-----
+[19:59:49.410] [main] [traceId:] [INFO ] [com.study.doc.properties.ReadProperties:142]: -----RCMNFC风场校验开始-----
+[19:59:49.424] [main] [traceId:] [ERROR] [com.study.doc.properties.ReadProperties:478]: 不符合能管的关键配置文件校验的第四项：【一次调频的配置】
+[19:59:49.424] [main] [traceId:] [ERROR] [com.study.doc.properties.ReadProperties:221]: 不符合能管的关键配置文件校验的第四项：【一次调频的配置】
+[19:59:49.427] [main] [traceId:] [INFO ] [com.study.doc.properties.ReadProperties:243]: ---能管的关键配置文件校验【正常结束】---
+[19:59:49.427] [main] [traceId:] [INFO ] [com.study.doc.properties.ReadProperties:145]: -----RCMNFC风场校验结束-----
+[19:59:49.427] [main] [traceId:] [INFO ] [com.study.doc.properties.ReadProperties:142]: -----RCYCGWFC风场校验开始-----
+[19:59:49.462] [main] [traceId:] [INFO ] [com.study.doc.properties.ReadProperties:243]: ---能管的关键配置文件校验【正常结束】---
+[19:59:49.462] [main] [traceId:] [INFO ] [com.study.doc.properties.ReadProperties:145]: -----RCYCGWFC风场校验结束-----
+[19:59:49.462] [main] [traceId:] [INFO ] [com.study.doc.properties.ReadProperties:142]: -----SHZFCB风场校验开始-----
+[19:59:49.466] [main] [traceId:] [ERROR] [com.study.doc.properties.ReadProperties:314]: 不符合能管的关键配置文件校验的第二项：【agc avc】
+[19:59:49.466] [main] [traceId:] [ERROR] [com.study.doc.properties.ReadProperties:191]: 不符合能管的关键配置文件校验的第二项：【agc avc】
+[19:59:49.468] [main] [traceId:] [ERROR] [com.study.doc.properties.ReadProperties:337]: sany.ems.ratedpower属性的值必须为【C025】
+[19:59:49.469] [main] [traceId:] [ERROR] [com.study.doc.properties.ReadProperties:208]: 不符合能管的关键配置文件校验的第三项：【风机采集点  sany/settings/modbus-tags.xml】
+[19:59:49.469] [main] [traceId:] [ERROR] [com.study.doc.properties.ReadProperties:478]: 不符合能管的关键配置文件校验的第四项：【一次调频的配置】
+[19:59:49.469] [main] [traceId:] [ERROR] [com.study.doc.properties.ReadProperties:221]: 不符合能管的关键配置文件校验的第四项：【一次调频的配置】
+[19:59:49.469] [main] [traceId:] [ERROR] [com.study.doc.properties.ReadProperties:617]: 不符合能管的关键配置文件校验的第五项：【并网点】
+[19:59:49.469] [main] [traceId:] [ERROR] [com.study.doc.properties.ReadProperties:236]: 不符合能管的关键配置文件校验的第五项：【并网点】
+[19:59:49.469] [main] [traceId:] [INFO ] [com.study.doc.properties.ReadProperties:243]: ---能管的关键配置文件校验【正常结束】---
+[19:59:49.470] [main] [traceId:] [INFO ] [com.study.doc.properties.ReadProperties:145]: -----SHZFCB风场校验结束-----
+[19:59:49.470] [main] [traceId:] [INFO ] [com.study.doc.properties.ReadProperties:142]: -----SJTFC风场校验开始-----
+[19:59:49.484] [main] [traceId:] [INFO ] [com.study.doc.properties.ReadProperties:243]: ---能管的关键配置文件校验【正常结束】---
+[19:59:49.484] [main] [traceId:] [INFO ] [com.study.doc.properties.ReadProperties:145]: -----SJTFC风场校验结束-----
+[19:59:49.484] [main] [traceId:] [INFO ] [com.study.doc.properties.ReadProperties:142]: -----SLSFC风场校验开始-----
+[19:59:49.491] [main] [traceId:] [ERROR] [com.study.doc.properties.ReadProperties:314]: 不符合能管的关键配置文件校验的第二项：【agc avc】
+[19:59:49.491] [main] [traceId:] [ERROR] [com.study.doc.properties.ReadProperties:191]: 不符合能管的关键配置文件校验的第二项：【agc avc】
+[19:59:49.493] [main] [traceId:] [ERROR] [com.study.doc.properties.ReadProperties:337]: sany.ems.ratedpower属性的值必须为【C025】
+[19:59:49.493] [main] [traceId:] [ERROR] [com.study.doc.properties.ReadProperties:208]: 不符合能管的关键配置文件校验的第三项：【风机采集点  sany/settings/modbus-tags.xml】
+[19:59:49.498] [main] [traceId:] [ERROR] [com.study.doc.properties.ReadProperties:617]: 不符合能管的关键配置文件校验的第五项：【并网点】
+[19:59:49.498] [main] [traceId:] [ERROR] [com.study.doc.properties.ReadProperties:236]: 不符合能管的关键配置文件校验的第五项：【并网点】
+[19:59:49.498] [main] [traceId:] [INFO ] [com.study.doc.properties.ReadProperties:243]: ---能管的关键配置文件校验【正常结束】---
+[19:59:49.498] [main] [traceId:] [INFO ] [com.study.doc.properties.ReadProperties:145]: -----SLSFC风场校验结束-----
+[19:59:49.498] [main] [traceId:] [INFO ] [com.study.doc.properties.ReadProperties:142]: -----SZLFC风场校验开始-----
+[19:59:49.519] [main] [traceId:] [INFO ] [com.study.doc.properties.ReadProperties:243]: ---能管的关键配置文件校验【正常结束】---
+[19:59:49.519] [main] [traceId:] [INFO ] [com.study.doc.properties.ReadProperties:145]: -----SZLFC风场校验结束-----
+[19:59:49.519] [main] [traceId:] [INFO ] [com.study.doc.properties.ReadProperties:142]: -----TLFFCA风场校验开始-----
+[19:59:49.529] [main] [traceId:] [ERROR] [com.study.doc.properties.ReadProperties:478]: 不符合能管的关键配置文件校验的第四项：【一次调频的配置】
+[19:59:49.529] [main] [traceId:] [ERROR] [com.study.doc.properties.ReadProperties:221]: 不符合能管的关键配置文件校验的第四项：【一次调频的配置】
+[19:59:49.532] [main] [traceId:] [INFO ] [com.study.doc.properties.ReadProperties:243]: ---能管的关键配置文件校验【正常结束】---
+[19:59:49.532] [main] [traceId:] [INFO ] [com.study.doc.properties.ReadProperties:145]: -----TLFFCA风场校验结束-----
+[19:59:49.532] [main] [traceId:] [INFO ] [com.study.doc.properties.ReadProperties:142]: -----TLFFCB风场校验开始-----
+[19:59:49.539] [main] [traceId:] [ERROR] [com.study.doc.properties.ReadProperties:478]: 不符合能管的关键配置文件校验的第四项：【一次调频的配置】
+[19:59:49.539] [main] [traceId:] [ERROR] [com.study.doc.properties.ReadProperties:221]: 不符合能管的关键配置文件校验的第四项：【一次调频的配置】
+[19:59:49.541] [main] [traceId:] [INFO ] [com.study.doc.properties.ReadProperties:243]: ---能管的关键配置文件校验【正常结束】---
+[19:59:49.541] [main] [traceId:] [INFO ] [com.study.doc.properties.ReadProperties:145]: -----TLFFCB风场校验结束-----
+[19:59:49.541] [main] [traceId:] [INFO ] [com.study.doc.properties.ReadProperties:142]: -----TLFFCC风场校验开始-----
+[19:59:49.548] [main] [traceId:] [ERROR] [com.study.doc.properties.ReadProperties:478]: 不符合能管的关键配置文件校验的第四项：【一次调频的配置】
+[19:59:49.548] [main] [traceId:] [ERROR] [com.study.doc.properties.ReadProperties:221]: 不符合能管的关键配置文件校验的第四项：【一次调频的配置】
+[19:59:49.549] [main] [traceId:] [INFO ] [com.study.doc.properties.ReadProperties:243]: ---能管的关键配置文件校验【正常结束】---
+[19:59:49.549] [main] [traceId:] [INFO ] [com.study.doc.properties.ReadProperties:145]: -----TLFFCC风场校验结束-----
+[19:59:49.549] [main] [traceId:] [INFO ] [com.study.doc.properties.ReadProperties:142]: -----TLFFCD风场校验开始-----
+[19:59:49.559] [main] [traceId:] [ERROR] [com.study.doc.properties.ReadProperties:478]: 不符合能管的关键配置文件校验的第四项：【一次调频的配置】
+[19:59:49.559] [main] [traceId:] [ERROR] [com.study.doc.properties.ReadProperties:221]: 不符合能管的关键配置文件校验的第四项：【一次调频的配置】
+[19:59:49.561] [main] [traceId:] [INFO ] [com.study.doc.properties.ReadProperties:243]: ---能管的关键配置文件校验【正常结束】---
+[19:59:49.561] [main] [traceId:] [INFO ] [com.study.doc.properties.ReadProperties:145]: -----TLFFCD风场校验结束-----
+[19:59:49.561] [main] [traceId:] [INFO ] [com.study.doc.properties.ReadProperties:142]: -----TTJFC风场校验开始-----
+[19:59:49.563] [main] [traceId:] [ERROR] [com.study.doc.properties.ReadProperties:314]: 不符合能管的关键配置文件校验的第二项：【agc avc】
+[19:59:49.563] [main] [traceId:] [ERROR] [com.study.doc.properties.ReadProperties:191]: 不符合能管的关键配置文件校验的第二项：【agc avc】
+[19:59:49.564] [main] [traceId:] [ERROR] [com.study.doc.properties.ReadProperties:337]: sany.ems.ratedpower属性的值必须为【C025】
+[19:59:49.565] [main] [traceId:] [ERROR] [com.study.doc.properties.ReadProperties:208]: 不符合能管的关键配置文件校验的第三项：【风机采集点  sany/settings/modbus-tags.xml】
+[19:59:49.565] [main] [traceId:] [ERROR] [com.study.doc.properties.ReadProperties:478]: 不符合能管的关键配置文件校验的第四项：【一次调频的配置】
+[19:59:49.565] [main] [traceId:] [ERROR] [com.study.doc.properties.ReadProperties:221]: 不符合能管的关键配置文件校验的第四项：【一次调频的配置】
+[19:59:49.565] [main] [traceId:] [ERROR] [com.study.doc.properties.ReadProperties:617]: 不符合能管的关键配置文件校验的第五项：【并网点】
+[19:59:49.565] [main] [traceId:] [ERROR] [com.study.doc.properties.ReadProperties:236]: 不符合能管的关键配置文件校验的第五项：【并网点】
+[19:59:49.565] [main] [traceId:] [INFO ] [com.study.doc.properties.ReadProperties:243]: ---能管的关键配置文件校验【正常结束】---
+[19:59:49.565] [main] [traceId:] [INFO ] [com.study.doc.properties.ReadProperties:145]: -----TTJFC风场校验结束-----
+[19:59:49.565] [main] [traceId:] [INFO ] [com.study.doc.properties.ReadProperties:142]: -----TYFCB风场校验开始-----
+[19:59:49.581] [main] [traceId:] [ERROR] [com.study.doc.properties.ReadProperties:617]: 不符合能管的关键配置文件校验的第五项：【并网点】
+[19:59:49.581] [main] [traceId:] [ERROR] [com.study.doc.properties.ReadProperties:236]: 不符合能管的关键配置文件校验的第五项：【并网点】
+[19:59:49.581] [main] [traceId:] [INFO ] [com.study.doc.properties.ReadProperties:243]: ---能管的关键配置文件校验【正常结束】---
+[19:59:49.581] [main] [traceId:] [INFO ] [com.study.doc.properties.ReadProperties:145]: -----TYFCB风场校验结束-----
+[19:59:49.582] [main] [traceId:] [INFO ] [com.study.doc.properties.ReadProperties:142]: -----TYGFCB风场校验开始-----
+[19:59:49.586] [main] [traceId:] [ERROR] [com.study.doc.properties.ReadProperties:314]: 不符合能管的关键配置文件校验的第二项：【agc avc】
+[19:59:49.587] [main] [traceId:] [ERROR] [com.study.doc.properties.ReadProperties:191]: 不符合能管的关键配置文件校验的第二项：【agc avc】
+[19:59:49.588] [main] [traceId:] [ERROR] [com.study.doc.properties.ReadProperties:337]: sany.ems.ratedpower属性的值必须为【C025】
+[19:59:49.588] [main] [traceId:] [ERROR] [com.study.doc.properties.ReadProperties:208]: 不符合能管的关键配置文件校验的第三项：【风机采集点  sany/settings/modbus-tags.xml】
+[19:59:49.589] [main] [traceId:] [ERROR] [com.study.doc.properties.ReadProperties:478]: 不符合能管的关键配置文件校验的第四项：【一次调频的配置】
+[19:59:49.589] [main] [traceId:] [ERROR] [com.study.doc.properties.ReadProperties:221]: 不符合能管的关键配置文件校验的第四项：【一次调频的配置】
+[19:59:49.589] [main] [traceId:] [ERROR] [com.study.doc.properties.ReadProperties:617]: 不符合能管的关键配置文件校验的第五项：【并网点】
+[19:59:49.589] [main] [traceId:] [ERROR] [com.study.doc.properties.ReadProperties:236]: 不符合能管的关键配置文件校验的第五项：【并网点】
+[19:59:49.589] [main] [traceId:] [INFO ] [com.study.doc.properties.ReadProperties:243]: ---能管的关键配置文件校验【正常结束】---
+[19:59:49.589] [main] [traceId:] [INFO ] [com.study.doc.properties.ReadProperties:145]: -----TYGFCB风场校验结束-----
+[19:59:49.589] [main] [traceId:] [INFO ] [com.study.doc.properties.ReadProperties:142]: -----TYSFCA风场校验开始-----
+[19:59:49.589] [main] [traceId:] [ERROR] [com.study.doc.properties.ReadProperties:260]: sany.farm.turbine.powerCurve.se14636-100属性不能为空或者空字符串
+[19:59:49.590] [main] [traceId:] [ERROR] [com.study.doc.properties.ReadProperties:171]: 不符合能管的关键配置文件校验的第一项：【功率曲线的配置】
+[19:59:49.592] [main] [traceId:] [ERROR] [com.study.doc.properties.ReadProperties:314]: 不符合能管的关键配置文件校验的第二项：【agc avc】
+[19:59:49.592] [main] [traceId:] [ERROR] [com.study.doc.properties.ReadProperties:191]: 不符合能管的关键配置文件校验的第二项：【agc avc】
+[19:59:49.594] [main] [traceId:] [ERROR] [com.study.doc.properties.ReadProperties:337]: sany.ems.ratedpower属性的值必须为【C025】
+[19:59:49.594] [main] [traceId:] [ERROR] [com.study.doc.properties.ReadProperties:208]: 不符合能管的关键配置文件校验的第三项：【风机采集点  sany/settings/modbus-tags.xml】
+[19:59:49.594] [main] [traceId:] [ERROR] [com.study.doc.properties.ReadProperties:478]: 不符合能管的关键配置文件校验的第四项：【一次调频的配置】
+[19:59:49.594] [main] [traceId:] [ERROR] [com.study.doc.properties.ReadProperties:221]: 不符合能管的关键配置文件校验的第四项：【一次调频的配置】
+[19:59:49.594] [main] [traceId:] [ERROR] [com.study.doc.properties.ReadProperties:617]: 不符合能管的关键配置文件校验的第五项：【并网点】
+[19:59:49.594] [main] [traceId:] [ERROR] [com.study.doc.properties.ReadProperties:236]: 不符合能管的关键配置文件校验的第五项：【并网点】
+[19:59:49.594] [main] [traceId:] [INFO ] [com.study.doc.properties.ReadProperties:243]: ---能管的关键配置文件校验【正常结束】---
+[19:59:49.594] [main] [traceId:] [INFO ] [com.study.doc.properties.ReadProperties:145]: -----TYSFCA风场校验结束-----
+[19:59:49.594] [main] [traceId:] [INFO ] [com.study.doc.properties.ReadProperties:142]: -----TYSFCB风场校验开始-----
+[19:59:49.616] [main] [traceId:] [ERROR] [com.study.doc.properties.ReadProperties:478]: 不符合能管的关键配置文件校验的第四项：【一次调频的配置】
+[19:59:49.617] [main] [traceId:] [ERROR] [com.study.doc.properties.ReadProperties:221]: 不符合能管的关键配置文件校验的第四项：【一次调频的配置】
+[19:59:49.618] [main] [traceId:] [INFO ] [com.study.doc.properties.ReadProperties:243]: ---能管的关键配置文件校验【正常结束】---
+[19:59:49.618] [main] [traceId:] [INFO ] [com.study.doc.properties.ReadProperties:145]: -----TYSFCB风场校验结束-----
+[19:59:49.619] [main] [traceId:] [INFO ] [com.study.doc.properties.ReadProperties:142]: -----WHHHFC风场校验开始-----
+[19:59:49.639] [main] [traceId:] [ERROR] [com.study.doc.properties.ReadProperties:617]: 不符合能管的关键配置文件校验的第五项：【并网点】
+[19:59:49.639] [main] [traceId:] [ERROR] [com.study.doc.properties.ReadProperties:236]: 不符合能管的关键配置文件校验的第五项：【并网点】
+[19:59:49.640] [main] [traceId:] [INFO ] [com.study.doc.properties.ReadProperties:243]: ---能管的关键配置文件校验【正常结束】---
+[19:59:49.640] [main] [traceId:] [INFO ] [com.study.doc.properties.ReadProperties:145]: -----WHHHFC风场校验结束-----
+[19:59:49.640] [main] [traceId:] [INFO ] [com.study.doc.properties.ReadProperties:142]: -----WNBSFC风场校验开始-----
+[19:59:49.648] [main] [traceId:] [ERROR] [com.study.doc.properties.ReadProperties:478]: 不符合能管的关键配置文件校验的第四项：【一次调频的配置】
+[19:59:49.649] [main] [traceId:] [ERROR] [com.study.doc.properties.ReadProperties:221]: 不符合能管的关键配置文件校验的第四项：【一次调频的配置】
+[19:59:49.650] [main] [traceId:] [INFO ] [com.study.doc.properties.ReadProperties:243]: ---能管的关键配置文件校验【正常结束】---
+[19:59:49.650] [main] [traceId:] [INFO ] [com.study.doc.properties.ReadProperties:145]: -----WNBSFC风场校验结束-----
+[19:59:49.650] [main] [traceId:] [INFO ] [com.study.doc.properties.ReadProperties:142]: -----WQHJFC风场校验开始-----
+[19:59:49.663] [main] [traceId:] [ERROR] [com.study.doc.properties.ReadProperties:617]: 不符合能管的关键配置文件校验的第五项：【并网点】
+[19:59:49.663] [main] [traceId:] [ERROR] [com.study.doc.properties.ReadProperties:236]: 不符合能管的关键配置文件校验的第五项：【并网点】
+[19:59:49.664] [main] [traceId:] [INFO ] [com.study.doc.properties.ReadProperties:243]: ---能管的关键配置文件校验【正常结束】---
+[19:59:49.664] [main] [traceId:] [INFO ] [com.study.doc.properties.ReadProperties:145]: -----WQHJFC风场校验结束-----
+[19:59:49.664] [main] [traceId:] [INFO ] [com.study.doc.properties.ReadProperties:142]: -----WQJHFC风场校验开始-----
+[19:59:49.668] [main] [traceId:] [ERROR] [com.study.doc.properties.ReadProperties:314]: 不符合能管的关键配置文件校验的第二项：【agc avc】
+[19:59:49.668] [main] [traceId:] [ERROR] [com.study.doc.properties.ReadProperties:191]: 不符合能管的关键配置文件校验的第二项：【agc avc】
+[19:59:49.669] [main] [traceId:] [ERROR] [com.study.doc.properties.ReadProperties:337]: sany.ems.ratedpower属性的值必须为【C025】
+[19:59:49.670] [main] [traceId:] [ERROR] [com.study.doc.properties.ReadProperties:208]: 不符合能管的关键配置文件校验的第三项：【风机采集点  sany/settings/modbus-tags.xml】
+[19:59:49.673] [main] [traceId:] [ERROR] [com.study.doc.properties.ReadProperties:617]: 不符合能管的关键配置文件校验的第五项：【并网点】
+[19:59:49.673] [main] [traceId:] [ERROR] [com.study.doc.properties.ReadProperties:236]: 不符合能管的关键配置文件校验的第五项：【并网点】
+[19:59:49.673] [main] [traceId:] [INFO ] [com.study.doc.properties.ReadProperties:243]: ---能管的关键配置文件校验【正常结束】---
+[19:59:49.673] [main] [traceId:] [INFO ] [com.study.doc.properties.ReadProperties:145]: -----WQJHFC风场校验结束-----
+[19:59:49.673] [main] [traceId:] [INFO ] [com.study.doc.properties.ReadProperties:142]: -----WZFC风场校验开始-----
+[19:59:49.683] [main] [traceId:] [ERROR] [com.study.doc.properties.ReadProperties:478]: 不符合能管的关键配置文件校验的第四项：【一次调频的配置】
+[19:59:49.684] [main] [traceId:] [ERROR] [com.study.doc.properties.ReadProperties:221]: 不符合能管的关键配置文件校验的第四项：【一次调频的配置】
+[19:59:49.684] [main] [traceId:] [ERROR] [com.study.doc.properties.ReadProperties:617]: 不符合能管的关键配置文件校验的第五项：【并网点】
+[19:59:49.684] [main] [traceId:] [ERROR] [com.study.doc.properties.ReadProperties:236]: 不符合能管的关键配置文件校验的第五项：【并网点】
+[19:59:49.684] [main] [traceId:] [INFO ] [com.study.doc.properties.ReadProperties:243]: ---能管的关键配置文件校验【正常结束】---
+[19:59:49.684] [main] [traceId:] [INFO ] [com.study.doc.properties.ReadProperties:145]: -----WZFC风场校验结束-----
+[19:59:49.684] [main] [traceId:] [INFO ] [com.study.doc.properties.ReadProperties:142]: -----XDTFC风场校验开始-----
+[19:59:49.686] [main] [traceId:] [ERROR] [com.study.doc.properties.ReadProperties:314]: 不符合能管的关键配置文件校验的第二项：【agc avc】
+[19:59:49.686] [main] [traceId:] [ERROR] [com.study.doc.properties.ReadProperties:191]: 不符合能管的关键配置文件校验的第二项：【agc avc】
+[19:59:49.688] [main] [traceId:] [ERROR] [com.study.doc.properties.ReadProperties:478]: 不符合能管的关键配置文件校验的第四项：【一次调频的配置】
+[19:59:49.688] [main] [traceId:] [ERROR] [com.study.doc.properties.ReadProperties:221]: 不符合能管的关键配置文件校验的第四项：【一次调频的配置】
+[19:59:49.688] [main] [traceId:] [ERROR] [com.study.doc.properties.ReadProperties:617]: 不符合能管的关键配置文件校验的第五项：【并网点】
+[19:59:49.688] [main] [traceId:] [ERROR] [com.study.doc.properties.ReadProperties:236]: 不符合能管的关键配置文件校验的第五项：【并网点】
+[19:59:49.688] [main] [traceId:] [INFO ] [com.study.doc.properties.ReadProperties:243]: ---能管的关键配置文件校验【正常结束】---
+[19:59:49.688] [main] [traceId:] [INFO ] [com.study.doc.properties.ReadProperties:145]: -----XDTFC风场校验结束-----
+[19:59:49.689] [main] [traceId:] [INFO ] [com.study.doc.properties.ReadProperties:142]: -----XHTFC风场校验开始-----
+[19:59:49.692] [main] [traceId:] [ERROR] [com.study.doc.properties.ReadProperties:314]: 不符合能管的关键配置文件校验的第二项：【agc avc】
+[19:59:49.692] [main] [traceId:] [ERROR] [com.study.doc.properties.ReadProperties:191]: 不符合能管的关键配置文件校验的第二项：【agc avc】
+[19:59:49.694] [main] [traceId:] [ERROR] [com.study.doc.properties.ReadProperties:337]: sany.ems.ratedpower属性的值必须为【C025】
+[19:59:49.694] [main] [traceId:] [ERROR] [com.study.doc.properties.ReadProperties:208]: 不符合能管的关键配置文件校验的第三项：【风机采集点  sany/settings/modbus-tags.xml】
+[19:59:49.694] [main] [traceId:] [ERROR] [com.study.doc.properties.ReadProperties:478]: 不符合能管的关键配置文件校验的第四项：【一次调频的配置】
+[19:59:49.694] [main] [traceId:] [ERROR] [com.study.doc.properties.ReadProperties:221]: 不符合能管的关键配置文件校验的第四项：【一次调频的配置】
+[19:59:49.694] [main] [traceId:] [ERROR] [com.study.doc.properties.ReadProperties:617]: 不符合能管的关键配置文件校验的第五项：【并网点】
+[19:59:49.694] [main] [traceId:] [ERROR] [com.study.doc.properties.ReadProperties:236]: 不符合能管的关键配置文件校验的第五项：【并网点】
+[19:59:49.695] [main] [traceId:] [INFO ] [com.study.doc.properties.ReadProperties:243]: ---能管的关键配置文件校验【正常结束】---
+[19:59:49.695] [main] [traceId:] [INFO ] [com.study.doc.properties.ReadProperties:145]: -----XHTFC风场校验结束-----
+[19:59:49.695] [main] [traceId:] [INFO ] [com.study.doc.properties.ReadProperties:142]: -----XSFC风场校验开始-----
+[19:59:49.705] [main] [traceId:] [ERROR] [com.study.doc.properties.ReadProperties:478]: 不符合能管的关键配置文件校验的第四项：【一次调频的配置】
+[19:59:49.705] [main] [traceId:] [ERROR] [com.study.doc.properties.ReadProperties:221]: 不符合能管的关键配置文件校验的第四项：【一次调频的配置】
+[19:59:49.705] [main] [traceId:] [ERROR] [com.study.doc.properties.ReadProperties:617]: 不符合能管的关键配置文件校验的第五项：【并网点】
+[19:59:49.705] [main] [traceId:] [ERROR] [com.study.doc.properties.ReadProperties:236]: 不符合能管的关键配置文件校验的第五项：【并网点】
+[19:59:49.705] [main] [traceId:] [INFO ] [com.study.doc.properties.ReadProperties:243]: ---能管的关键配置文件校验【正常结束】---
+[19:59:49.705] [main] [traceId:] [INFO ] [com.study.doc.properties.ReadProperties:145]: -----XSFC风场校验结束-----
+[19:59:49.705] [main] [traceId:] [INFO ] [com.study.doc.properties.ReadProperties:142]: -----XXAJWFC风场校验开始-----
+[19:59:49.718] [main] [traceId:] [INFO ] [com.study.doc.properties.ReadProperties:243]: ---能管的关键配置文件校验【正常结束】---
+[19:59:49.718] [main] [traceId:] [INFO ] [com.study.doc.properties.ReadProperties:145]: -----XXAJWFC风场校验结束-----
+[19:59:49.718] [main] [traceId:] [INFO ] [com.study.doc.properties.ReadProperties:142]: -----XXHTFC风场校验开始-----
+[19:59:49.734] [main] [traceId:] [ERROR] [com.study.doc.properties.ReadProperties:617]: 不符合能管的关键配置文件校验的第五项：【并网点】
+[19:59:49.734] [main] [traceId:] [ERROR] [com.study.doc.properties.ReadProperties:236]: 不符合能管的关键配置文件校验的第五项：【并网点】
+[19:59:49.734] [main] [traceId:] [INFO ] [com.study.doc.properties.ReadProperties:243]: ---能管的关键配置文件校验【正常结束】---
+[19:59:49.734] [main] [traceId:] [INFO ] [com.study.doc.properties.ReadProperties:145]: -----XXHTFC风场校验结束-----
+[19:59:49.734] [main] [traceId:] [INFO ] [com.study.doc.properties.ReadProperties:142]: -----XXQJLFC风场校验开始-----
+[19:59:49.748] [main] [traceId:] [INFO ] [com.study.doc.properties.ReadProperties:243]: ---能管的关键配置文件校验【正常结束】---
+[19:59:49.748] [main] [traceId:] [INFO ] [com.study.doc.properties.ReadProperties:145]: -----XXQJLFC风场校验结束-----
+[19:59:49.748] [main] [traceId:] [INFO ] [com.study.doc.properties.ReadProperties:142]: -----YGFCA风场校验开始-----
+[19:59:49.750] [main] [traceId:] [ERROR] [com.study.doc.properties.ReadProperties:314]: 不符合能管的关键配置文件校验的第二项：【agc avc】
+[19:59:49.750] [main] [traceId:] [ERROR] [com.study.doc.properties.ReadProperties:191]: 不符合能管的关键配置文件校验的第二项：【agc avc】
+[19:59:49.753] [main] [traceId:] [ERROR] [com.study.doc.properties.ReadProperties:337]: sany.ems.ratedpower属性的值必须为【C025】
+[19:59:49.753] [main] [traceId:] [ERROR] [com.study.doc.properties.ReadProperties:208]: 不符合能管的关键配置文件校验的第三项：【风机采集点  sany/settings/modbus-tags.xml】
+[19:59:49.753] [main] [traceId:] [ERROR] [com.study.doc.properties.ReadProperties:478]: 不符合能管的关键配置文件校验的第四项：【一次调频的配置】
+[19:59:49.753] [main] [traceId:] [ERROR] [com.study.doc.properties.ReadProperties:221]: 不符合能管的关键配置文件校验的第四项：【一次调频的配置】
+[19:59:49.753] [main] [traceId:] [ERROR] [com.study.doc.properties.ReadProperties:617]: 不符合能管的关键配置文件校验的第五项：【并网点】
+[19:59:49.753] [main] [traceId:] [ERROR] [com.study.doc.properties.ReadProperties:236]: 不符合能管的关键配置文件校验的第五项：【并网点】
+[19:59:49.753] [main] [traceId:] [INFO ] [com.study.doc.properties.ReadProperties:243]: ---能管的关键配置文件校验【正常结束】---
+[19:59:49.753] [main] [traceId:] [INFO ] [com.study.doc.properties.ReadProperties:145]: -----YGFCA风场校验结束-----
+[19:59:49.753] [main] [traceId:] [INFO ] [com.study.doc.properties.ReadProperties:142]: -----YJBFC风场校验开始-----
+[19:59:49.768] [main] [traceId:] [INFO ] [com.study.doc.properties.ReadProperties:243]: ---能管的关键配置文件校验【正常结束】---
+[19:59:49.768] [main] [traceId:] [INFO ] [com.study.doc.properties.ReadProperties:145]: -----YJBFC风场校验结束-----
+[19:59:49.768] [main] [traceId:] [INFO ] [com.study.doc.properties.ReadProperties:142]: -----YJWFC风场校验开始-----
+[19:59:49.771] [main] [traceId:] [ERROR] [com.study.doc.properties.ReadProperties:314]: 不符合能管的关键配置文件校验的第二项：【agc avc】
+[19:59:49.771] [main] [traceId:] [ERROR] [com.study.doc.properties.ReadProperties:191]: 不符合能管的关键配置文件校验的第二项：【agc avc】
+[19:59:49.774] [main] [traceId:] [ERROR] [com.study.doc.properties.ReadProperties:337]: sany.ems.ratedpower属性的值必须为【C025】
+[19:59:49.774] [main] [traceId:] [ERROR] [com.study.doc.properties.ReadProperties:208]: 不符合能管的关键配置文件校验的第三项：【风机采集点  sany/settings/modbus-tags.xml】
+[19:59:49.774] [main] [traceId:] [ERROR] [com.study.doc.properties.ReadProperties:478]: 不符合能管的关键配置文件校验的第四项：【一次调频的配置】
+[19:59:49.774] [main] [traceId:] [ERROR] [com.study.doc.properties.ReadProperties:221]: 不符合能管的关键配置文件校验的第四项：【一次调频的配置】
+[19:59:49.774] [main] [traceId:] [ERROR] [com.study.doc.properties.ReadProperties:617]: 不符合能管的关键配置文件校验的第五项：【并网点】
+[19:59:49.774] [main] [traceId:] [ERROR] [com.study.doc.properties.ReadProperties:236]: 不符合能管的关键配置文件校验的第五项：【并网点】
+[19:59:49.774] [main] [traceId:] [INFO ] [com.study.doc.properties.ReadProperties:243]: ---能管的关键配置文件校验【正常结束】---
+[19:59:49.774] [main] [traceId:] [INFO ] [com.study.doc.properties.ReadProperties:145]: -----YJWFC风场校验结束-----
+[19:59:49.775] [main] [traceId:] [INFO ] [com.study.doc.properties.ReadProperties:142]: -----YTHFC风场校验开始-----
+[19:59:49.798] [main] [traceId:] [ERROR] [com.study.doc.properties.ReadProperties:478]: 不符合能管的关键配置文件校验的第四项：【一次调频的配置】
+[19:59:49.798] [main] [traceId:] [ERROR] [com.study.doc.properties.ReadProperties:221]: 不符合能管的关键配置文件校验的第四项：【一次调频的配置】
+[19:59:49.800] [main] [traceId:] [INFO ] [com.study.doc.properties.ReadProperties:243]: ---能管的关键配置文件校验【正常结束】---
+[19:59:49.800] [main] [traceId:] [INFO ] [com.study.doc.properties.ReadProperties:145]: -----YTHFC风场校验结束-----
+[19:59:49.801] [main] [traceId:] [INFO ] [com.study.doc.properties.ReadProperties:142]: -----ZBCSFC风场校验开始-----
+[19:59:49.803] [main] [traceId:] [ERROR] [com.study.doc.properties.ReadProperties:314]: 不符合能管的关键配置文件校验的第二项：【agc avc】
+[19:59:49.803] [main] [traceId:] [ERROR] [com.study.doc.properties.ReadProperties:191]: 不符合能管的关键配置文件校验的第二项：【agc avc】
+[19:59:49.805] [main] [traceId:] [ERROR] [com.study.doc.properties.ReadProperties:478]: 不符合能管的关键配置文件校验的第四项：【一次调频的配置】
+[19:59:49.805] [main] [traceId:] [ERROR] [com.study.doc.properties.ReadProperties:221]: 不符合能管的关键配置文件校验的第四项：【一次调频的配置】
+[19:59:49.805] [main] [traceId:] [ERROR] [com.study.doc.properties.ReadProperties:617]: 不符合能管的关键配置文件校验的第五项：【并网点】
+[19:59:49.805] [main] [traceId:] [ERROR] [com.study.doc.properties.ReadProperties:236]: 不符合能管的关键配置文件校验的第五项：【并网点】
+[19:59:49.805] [main] [traceId:] [INFO ] [com.study.doc.properties.ReadProperties:243]: ---能管的关键配置文件校验【正常结束】---
+[19:59:49.805] [main] [traceId:] [INFO ] [com.study.doc.properties.ReadProperties:145]: -----ZBCSFC风场校验结束-----
+[19:59:49.805] [main] [traceId:] [INFO ] [com.study.doc.properties.ReadProperties:142]: -----ZKSQFC风场校验开始-----
+[19:59:49.807] [main] [traceId:] [ERROR] [com.study.doc.properties.ReadProperties:314]: 不符合能管的关键配置文件校验的第二项：【agc avc】
+[19:59:49.807] [main] [traceId:] [ERROR] [com.study.doc.properties.ReadProperties:191]: 不符合能管的关键配置文件校验的第二项：【agc avc】
+[19:59:49.808] [main] [traceId:] [ERROR] [com.study.doc.properties.ReadProperties:478]: 不符合能管的关键配置文件校验的第四项：【一次调频的配置】
+[19:59:49.809] [main] [traceId:] [ERROR] [com.study.doc.properties.ReadProperties:221]: 不符合能管的关键配置文件校验的第四项：【一次调频的配置】
+[19:59:49.811] [main] [traceId:] [INFO ] [com.study.doc.properties.ReadProperties:243]: ---能管的关键配置文件校验【正常结束】---
+[19:59:49.811] [main] [traceId:] [INFO ] [com.study.doc.properties.ReadProperties:145]: -----ZKSQFC风场校验结束-----

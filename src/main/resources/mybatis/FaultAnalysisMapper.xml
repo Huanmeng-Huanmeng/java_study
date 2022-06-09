@@ -1,0 +1,235 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="com.sany.mdm.dao.FaultAnalysisMapper" >
+  <resultMap id="BaseResultMap" type="com.sany.mdm.entity.FaultAnalysis" >
+    <id column="id" property="id" jdbcType="INTEGER" />
+    <result column="fault_analysis_uuid" property="faultAnalysisUuid" jdbcType="VARCHAR" />
+    <result column="point_uuid" property="pointUuid" jdbcType="VARCHAR" />
+    <result column="web_page_show" property="webPageShow" jdbcType="INTEGER" />
+    <result column="variable_name" property="variableName" jdbcType="VARCHAR" />
+    <result column="serial_number" property="serialNumber" jdbcType="VARCHAR" />
+    <result column="fault_code" property="faultCode" jdbcType="VARCHAR" />
+    <result column="fault_description" property="faultDescription" jdbcType="VARCHAR" />
+    <result column="analysis_rules_name" property="analysisRulesName" jdbcType="VARCHAR" />
+    <result column="brake_no" property="brakeNo" jdbcType="VARCHAR" />
+    <result column="alarm_level" property="alarmLevel" jdbcType="VARCHAR" />
+    <result column="part_name" property="partName" jdbcType="VARCHAR" />
+    <result column="create_by" property="createBy" jdbcType="VARCHAR" />
+    <result column="create_time" property="createTime" jdbcType="TIMESTAMP" />
+    <result column="update_by" property="updateBy" jdbcType="VARCHAR" />
+    <result column="update_time" property="updateTime" jdbcType="TIMESTAMP" />
+    <result column="is_delete" property="isDelete" jdbcType="INTEGER" />
+  </resultMap>
+  <sql id="Base_Column_List" >
+    id, fault_analysis_uuid, point_uuid, web_page_show, variable_name, serial_number, 
+    fault_code, fault_description, analysis_rules_name, brake_no, alarm_level, part_name, 
+    create_by, create_time, update_by, update_time, is_delete
+  </sql>
+  <select id="selectByPrimaryKey" resultMap="BaseResultMap" parameterType="java.lang.Integer" >
+    select 
+    <include refid="Base_Column_List" />
+    from fault_analysis
+    where id = #{id,jdbcType=INTEGER}
+  </select>
+  <delete id="deleteByPrimaryKey" parameterType="java.lang.Integer" >
+    delete from fault_analysis
+    where id = #{id,jdbcType=INTEGER}
+  </delete>
+  <insert id="insert" parameterType="com.sany.mdm.entity.FaultAnalysis" >
+    insert into fault_analysis (id, fault_analysis_uuid, point_uuid, 
+      web_page_show, variable_name, serial_number, 
+      fault_code, fault_description, analysis_rules_name, 
+      brake_no, alarm_level, part_name, 
+      create_by, create_time, update_by, 
+      update_time, is_delete)
+    values (#{id,jdbcType=INTEGER}, #{faultAnalysisUuid,jdbcType=VARCHAR}, #{pointUuid,jdbcType=VARCHAR}, 
+      #{webPageShow,jdbcType=INTEGER}, #{variableName,jdbcType=VARCHAR}, #{serialNumber,jdbcType=VARCHAR}, 
+      #{faultCode,jdbcType=VARCHAR}, #{faultDescription,jdbcType=VARCHAR}, #{analysisRulesName,jdbcType=VARCHAR}, 
+      #{brakeNo,jdbcType=VARCHAR}, #{alarmLevel,jdbcType=VARCHAR}, #{partName,jdbcType=VARCHAR}, 
+      #{createBy,jdbcType=VARCHAR}, #{createTime,jdbcType=TIMESTAMP}, #{updateBy,jdbcType=VARCHAR}, 
+      #{updateTime,jdbcType=TIMESTAMP}, #{isDelete,jdbcType=INTEGER})
+  </insert>
+  <insert id="insertSelective" parameterType="com.sany.mdm.entity.FaultAnalysis" >
+    insert into fault_analysis
+    <trim prefix="(" suffix=")" suffixOverrides="," >
+      <if test="id != null" >
+        id,
+      </if>
+      <if test="faultAnalysisUuid != null" >
+        fault_analysis_uuid,
+      </if>
+      <if test="pointUuid != null" >
+        point_uuid,
+      </if>
+      <if test="webPageShow != null" >
+        web_page_show,
+      </if>
+      <if test="variableName != null" >
+        variable_name,
+      </if>
+      <if test="serialNumber != null" >
+        serial_number,
+      </if>
+      <if test="faultCode != null" >
+        fault_code,
+      </if>
+      <if test="faultDescription != null" >
+        fault_description,
+      </if>
+      <if test="analysisRulesName != null" >
+        analysis_rules_name,
+      </if>
+      <if test="brakeNo != null" >
+        brake_no,
+      </if>
+      <if test="alarmLevel != null" >
+        alarm_level,
+      </if>
+      <if test="partName != null" >
+        part_name,
+      </if>
+      <if test="createBy != null" >
+        create_by,
+      </if>
+      <if test="createTime != null" >
+        create_time,
+      </if>
+      <if test="updateBy != null" >
+        update_by,
+      </if>
+      <if test="updateTime != null" >
+        update_time,
+      </if>
+      <if test="isDelete != null" >
+        is_delete,
+      </if>
+    </trim>
+    <trim prefix="values (" suffix=")" suffixOverrides="," >
+      <if test="id != null" >
+        #{id,jdbcType=INTEGER},
+      </if>
+      <if test="faultAnalysisUuid != null" >
+        #{faultAnalysisUuid,jdbcType=VARCHAR},
+      </if>
+      <if test="pointUuid != null" >
+        #{pointUuid,jdbcType=VARCHAR},
+      </if>
+      <if test="webPageShow != null" >
+        #{webPageShow,jdbcType=INTEGER},
+      </if>
+      <if test="variableName != null" >
+        #{variableName,jdbcType=VARCHAR},
+      </if>
+      <if test="serialNumber != null" >
+        #{serialNumber,jdbcType=VARCHAR},
+      </if>
+      <if test="faultCode != null" >
+        #{faultCode,jdbcType=VARCHAR},
+      </if>
+      <if test="faultDescription != null" >
+        #{faultDescription,jdbcType=VARCHAR},
+      </if>
+      <if test="analysisRulesName != null" >
+        #{analysisRulesName,jdbcType=VARCHAR},
+      </if>
+      <if test="brakeNo != null" >
+        #{brakeNo,jdbcType=VARCHAR},
+      </if>
+      <if test="alarmLevel != null" >
+        #{alarmLevel,jdbcType=VARCHAR},
+      </if>
+      <if test="partName != null" >
+        #{partName,jdbcType=VARCHAR},
+      </if>
+      <if test="createBy != null" >
+        #{createBy,jdbcType=VARCHAR},
+      </if>
+      <if test="createTime != null" >
+        #{createTime,jdbcType=TIMESTAMP},
+      </if>
+      <if test="updateBy != null" >
+        #{updateBy,jdbcType=VARCHAR},
+      </if>
+      <if test="updateTime != null" >
+        #{updateTime,jdbcType=TIMESTAMP},
+      </if>
+      <if test="isDelete != null" >
+        #{isDelete,jdbcType=INTEGER},
+      </if>
+    </trim>
+  </insert>
+  <update id="updateByPrimaryKeySelective" parameterType="com.sany.mdm.entity.FaultAnalysis" >
+    update fault_analysis
+    <set >
+      <if test="faultAnalysisUuid != null" >
+        fault_analysis_uuid = #{faultAnalysisUuid,jdbcType=VARCHAR},
+      </if>
+      <if test="pointUuid != null" >
+        point_uuid = #{pointUuid,jdbcType=VARCHAR},
+      </if>
+      <if test="webPageShow != null" >
+        web_page_show = #{webPageShow,jdbcType=INTEGER},
+      </if>
+      <if test="variableName != null" >
+        variable_name = #{variableName,jdbcType=VARCHAR},
+      </if>
+      <if test="serialNumber != null" >
+        serial_number = #{serialNumber,jdbcType=VARCHAR},
+      </if>
+      <if test="faultCode != null" >
+        fault_code = #{faultCode,jdbcType=VARCHAR},
+      </if>
+      <if test="faultDescription != null" >
+        fault_description = #{faultDescription,jdbcType=VARCHAR},
+      </if>
+      <if test="analysisRulesName != null" >
+        analysis_rules_name = #{analysisRulesName,jdbcType=VARCHAR},
+      </if>
+      <if test="brakeNo != null" >
+        brake_no = #{brakeNo,jdbcType=VARCHAR},
+      </if>
+      <if test="alarmLevel != null" >
+        alarm_level = #{alarmLevel,jdbcType=VARCHAR},
+      </if>
+      <if test="partName != null" >
+        part_name = #{partName,jdbcType=VARCHAR},
+      </if>
+      <if test="createBy != null" >
+        create_by = #{createBy,jdbcType=VARCHAR},
+      </if>
+      <if test="createTime != null" >
+        create_time = #{createTime,jdbcType=TIMESTAMP},
+      </if>
+      <if test="updateBy != null" >
+        update_by = #{updateBy,jdbcType=VARCHAR},
+      </if>
+      <if test="updateTime != null" >
+        update_time = #{updateTime,jdbcType=TIMESTAMP},
+      </if>
+      <if test="isDelete != null" >
+        is_delete = #{isDelete,jdbcType=INTEGER},
+      </if>
+    </set>
+    where id = #{id,jdbcType=INTEGER}
+  </update>
+  <update id="updateByPrimaryKey" parameterType="com.sany.mdm.entity.FaultAnalysis" >
+    update fault_analysis
+    set fault_analysis_uuid = #{faultAnalysisUuid,jdbcType=VARCHAR},
+      point_uuid = #{pointUuid,jdbcType=VARCHAR},
+      web_page_show = #{webPageShow,jdbcType=INTEGER},
+      variable_name = #{variableName,jdbcType=VARCHAR},
+      serial_number = #{serialNumber,jdbcType=VARCHAR},
+      fault_code = #{faultCode,jdbcType=VARCHAR},
+      fault_description = #{faultDescription,jdbcType=VARCHAR},
+      analysis_rules_name = #{analysisRulesName,jdbcType=VARCHAR},
+      brake_no = #{brakeNo,jdbcType=VARCHAR},
+      alarm_level = #{alarmLevel,jdbcType=VARCHAR},
+      part_name = #{partName,jdbcType=VARCHAR},
+      create_by = #{createBy,jdbcType=VARCHAR},
+      create_time = #{createTime,jdbcType=TIMESTAMP},
+      update_by = #{updateBy,jdbcType=VARCHAR},
+      update_time = #{updateTime,jdbcType=TIMESTAMP},
+      is_delete = #{isDelete,jdbcType=INTEGER}
+    where id = #{id,jdbcType=INTEGER}
+  </update>
+</mapper>
